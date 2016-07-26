@@ -9,19 +9,23 @@
 	<meta name="author" content="Sergiu-Octavian">
 	<style type="text/css">
 		html{
-			height: 100%;
-			width: 100%;
-			border-left: 1vw solid #000;
+			/*background: #000;*/
+			padding: 5vw;
 		}
 		body{
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			background: #f9f9f9;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			
 		}
 		h1 {
-			font-size: 9vw;
+			font-size: 6vw;
 			font-style: normal;
 			font-weight: bold;
-			line-height: 36px;
+			line-height: 1px;
+			padding-left: 10px;
 		}
 		h2 {
 			font-size: 16px;
@@ -29,6 +33,14 @@
 			font-variant: normal;
 			font-weight: 200;
 			line-height: 15px;
+			padding-left: 10px;
+		}
+		p{
+			text-align: left;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding-left: 10px;
+			font-weight: bold;
 		}
 		a {
 			font-size: 16px;
@@ -43,36 +55,55 @@
 			text-decoration: underline;
 		}
 		section{
-			margin: 40vh auto;
+			margin: 0 auto;
+			position: relative;
+			padding:0; 
 			/*text-align: center;*/
+			display: block;
+			max-width: 700px;
 		}
 		ul{
 			margin: 0;
 			padding: 0;
 			list-style: none;
-			width: 100px;
-			/*height: auto;*/
+			width: 300px;
+			height: 50px;
 			/*text-align: center;*/
 			border-top:2px solid red;
+			position: relative;
+
 
 		}
-		/*li{
+		li{
 			display: inline-block;
 			float: left;
-			margin: 10px;
-		}*/
+			padding-left: 10px;
+			text-align: left;
+		}
+		img{
+			/*margin: 0 auto;*/
+			position: relative;
+			display: block;
+			width: auto;
+		}
 	</style>
 </head>
 <body>
 	<section>
-		<h1>hallo!</h1>
-		<h2>Currently under development. Reach me here:</h2>
-		<ul>
-			<li><a href="mailto:octavian.sergiu@gmail.com"> mail</a></li>
-			<li><a href="https://www.linkedin.com/in/sergiuoctavian"> linkedin</a></li>
-			<li><a href="https://twitter.com/SergiuOctavian"> twitter</a></li>
-			<li><a href="https://www.instagram.com/sergiuoctavian/"> instagram</a></li>
-		</ul>
+		<div style="float: left;">
+		<img src="sergiu-octavian.png" alt="Sergiu-Octavian"/>
+		</div>
+		<div style="float: left; margin: 65px 10px;">
+			<h1>hallo!</h1>
+			<h2>Website currently under development.</h2>
+			<p>Reach me here:</p>
+			<ul>
+				<li><a href="mailto:octavian.sergiu@gmail.com"> mail</a></li>
+				<li><a href="https://www.linkedin.com/in/sergiuoctavian"> linkedin</a></li>
+				<li><a href="https://twitter.com/SergiuOctavian"> twitter</a></li>
+				<li><a href="https://www.instagram.com/sergiuoctavian/"> instagram</a></li>
+			</ul>
+		</div>
 	</section>
 </body>
 </html>
