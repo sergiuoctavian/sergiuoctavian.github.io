@@ -79,14 +79,13 @@
 			padding: 0;
 			list-style: none;
 			width: 273px;
-			height: 50px;
 			text-align: center;
 			z-index: 10;
 		}
 		li{
 			display: inline-block;
 			float: left;
-			padding: 10px;
+			padding: 0 10px;
 			text-align: left;
 		}
 		a{
@@ -100,6 +99,15 @@
 		}
 		a:hover{
 			text-decoration: underline;
+		}
+		.logo{
+			position: fixed;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
 		}
 	</style>
 </head>
@@ -118,7 +126,7 @@
 	<section>
 			<h1>Remember when digital design used to be boring?</h1>
 			<h2>Friday 6. January 2017 6:00 EET<strong style="color: red;"">.</strong></h2>	
-			<img src="signature.png"/>
+			<img class="logo" src="signature.png"/>
 	</section>
 	<ul>
 		<li><a target="_blank" href="mailto:octavian.sergiu@gmail.com"> mail</a></li>
