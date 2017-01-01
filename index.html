@@ -133,7 +133,7 @@
 		        canvas, ctx, //ctx stands for context and is the "curso" of our canvas element.
 		        particleCount = 100,
 		        particles = [], //this is an array which will hold our particles Object/Class
-		        colorArray = ["#fff","#222", "#f9f9f9", "#333", "#fff"]; //green, yellow, blue, orange, red
+		        colorArray = "#fff"; //white
 
 		    W = window.innerWidth * .99;
 		    H = window.innerHeight * .99;
@@ -145,7 +145,7 @@
 
 		    //Setup particle class
 		    function Particle() {
-		        this.color = colorArray[Math.floor((Math.random()*5)+1)];
+		        this.color = colorArray;
 		        this.x = Math.random() * W;
 		        this.y = Math.random() * H;
 		        this.direction = {
