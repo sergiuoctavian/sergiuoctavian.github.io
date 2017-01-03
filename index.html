@@ -29,8 +29,6 @@
 		}
 		body{
 			font-family: 'Andale Mono', AndaleMono, monospace;
-			/*background: #000 url('bg.jpg')no-repeat 100% 22%;*/
-			/*background-size: 130vh;*/
 			background: #000;
 			height: auto;
 			margin: 0;
@@ -50,8 +48,8 @@
 			font-size: 22px;
 			font-style: normal;
 			font-weight: 100;
-			/*line-height: 1px;*/
-			/*padding-left: 10px;*/
+			/*letter-spacing: -3px;*/
+			text-transform: uppercase;
 		}
 		h2 {
 			font-size: 16px;
@@ -62,7 +60,7 @@
 			/*padding-left: 10px;*/
 		}
 		p{
-			text-align: left;
+			text-align: center;
 			/*text-transform: uppercase;*/
 			/*letter-spacing: 1px;*/
 			/*padding-left: 0px;*/
@@ -138,9 +136,12 @@
 
 	</script>
 	<section>
-			<h1>Remember when digital design used to be boring?</h1>
-			<h2>Friday 6. January 2017 6:00 EET<strong style="color: red;"">.</strong></h2>	
-			<img class="logo" src="signature.png"/>
+		<h1>Remember when websites used to be boring?</h1>
+		<h2>Friday 20. January 2017 6:00 EET<strong style="color: red;"">.</strong></h2>
+
+		<!-- <p>An better digital world starts with your website.  -->
+		<!-- <p>Precision. Passion. Beauty.</p> -->
+		<img class="logo" src="signature.png"/>
 	</section>
 	<ul>
 		<li><a target="_blank" href="mailto:octavian.sergiu@gmail.com"> mail</a></li>
@@ -153,9 +154,9 @@
 		$(function () {
 		    var W, H,
 		        canvas, ctx, //ctx stands for context and is the "curso" of our canvas element.
-		        particleCount = 100,
+		        particleCount = 1000,
 		        particles = [], //this is an array which will hold our particles Object/Class
-		        colorArray = "#fff"; //white
+		        colorArray = "#666"; //white
 
 		    W = window.innerWidth * .99;
 		    H = window.innerHeight * .99;
