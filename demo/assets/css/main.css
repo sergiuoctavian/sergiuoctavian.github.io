@@ -3371,7 +3371,7 @@ section div {
 .back-btn {
   z-index: 1;
   display: block;
-  position: absolute;
+  position: fixed;
   padding: 20px;
 }
 
@@ -3528,67 +3528,69 @@ a:hover {
   .circle {
     width: 30vh;
     height: 30vh;
+    margin-top: 20vh;
   }
-  /* line 5, ../sass/main/_responsive.scss */
+  /* line 6, ../sass/main/_responsive.scss */
   .circle.start {
     opacity: 1;
     border: 20px solid #000;
     animation: circle 2.6s ease-out;
     animation-iteration-count: infinite;
   }
-  /* line 11, ../sass/main/_responsive.scss */
+  /* line 12, ../sass/main/_responsive.scss */
   .circle:hover {
     border: 80px solid #000;
   }
-  /* line 14, ../sass/main/_responsive.scss */
+  /* line 15, ../sass/main/_responsive.scss */
   .circle.selected {
-    border: 40px solid #000;
+    border: 30px solid #000;
   }
-  /* line 17, ../sass/main/_responsive.scss */
+  /* line 18, ../sass/main/_responsive.scss */
   .circle.selectedHover {
     border: 500px solid #000;
     background: url("../img/bg.jpg");
   }
 
-  /* line 25, ../sass/main/_responsive.scss */
+  /* line 26, ../sass/main/_responsive.scss */
   section div {
-    width: 50vw;
+    width: 70vw;
     margin-left: 10px;
   }
-  /* line 28, ../sass/main/_responsive.scss */
+  /* line 29, ../sass/main/_responsive.scss */
   section div p {
     display: none;
   }
 
-  /* line 34, ../sass/main/_responsive.scss */
+  /* line 35, ../sass/main/_responsive.scss */
   .access {
-    margin-top: 25vh;
+    margin-top: 55vh;
     text-align: left;
   }
 
-  /* line 38, ../sass/main/_responsive.scss */
+  /* line 39, ../sass/main/_responsive.scss */
   .back {
-    margin-top: 25vh;
+    margin-top: 55vh;
   }
 
-  /* line 42, ../sass/main/_responsive.scss */
+  /* line 43, ../sass/main/_responsive.scss */
   .onepage-pagination {
     position: fixed;
-    right: 70px;
-    top: 60vh;
+    right: 50px;
+    top: 50vh;
     z-index: 5;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  /* line 53, ../sass/main/_responsive.scss */
+  /* line 54, ../sass/main/_responsive.scss */
   .scroll-line {
     width: 90%;
   }
 
-  /* line 56, ../sass/main/_responsive.scss */
+  /* line 57, ../sass/main/_responsive.scss */
   .scroll {
     margin-right: 5px;
+    display: none;
   }
 }
