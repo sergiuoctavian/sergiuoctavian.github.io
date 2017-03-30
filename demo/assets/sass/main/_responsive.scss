@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
 	.circle{
-		width: 50vh;
-		height: 50vh;
+		width: 30vh;
+		height: 30vh;
 		&.start{
 	    opacity: 1;
 	    border: 20px solid #000;
@@ -32,14 +32,29 @@
 	}
 
 	.access{
-	  margin-top: 50vh;
+	  margin-top: 25vh;
+	  text-align: left;
 	}
 	.back{
-	  margin-top: 50vh;
+	  margin-top: 25vh;
 	}
 
-	// .onepage-pagination{
-	// 	display: none;
-	// }
+	.onepage-pagination {
+	  position: fixed;
+	  right: 70px;
+	  top: 60vh;
+	  z-index: 5;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+
+	.scroll-line{
+	  width: 90%; 
+	}
+	.scroll{
+	  margin-right: 5px; 
+	}
 
 }

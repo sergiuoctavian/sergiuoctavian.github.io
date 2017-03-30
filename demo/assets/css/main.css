@@ -3526,8 +3526,8 @@ a:hover {
 @media (max-width: 767px) {
   /* line 2, ../sass/main/_responsive.scss */
   .circle {
-    width: 50vh;
-    height: 50vh;
+    width: 30vh;
+    height: 30vh;
   }
   /* line 5, ../sass/main/_responsive.scss */
   .circle.start {
@@ -3562,11 +3562,33 @@ a:hover {
 
   /* line 34, ../sass/main/_responsive.scss */
   .access {
-    margin-top: 50vh;
+    margin-top: 25vh;
+    text-align: left;
   }
 
-  /* line 37, ../sass/main/_responsive.scss */
+  /* line 38, ../sass/main/_responsive.scss */
   .back {
-    margin-top: 50vh;
+    margin-top: 25vh;
+  }
+
+  /* line 42, ../sass/main/_responsive.scss */
+  .onepage-pagination {
+    position: fixed;
+    right: 70px;
+    top: 60vh;
+    z-index: 5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 53, ../sass/main/_responsive.scss */
+  .scroll-line {
+    width: 90%;
+  }
+
+  /* line 56, ../sass/main/_responsive.scss */
+  .scroll {
+    margin-right: 5px;
   }
 }
