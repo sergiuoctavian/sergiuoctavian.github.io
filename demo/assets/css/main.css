@@ -3569,9 +3569,4 @@ a:hover {
   .back {
     margin-top: 50vh;
   }
-
-  /* line 41, ../sass/main/_responsive.scss */
-  .onepage-pagination {
-    display: none;
-  }
 }
