@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+	.circle{
+		width: 50vh;
+		height: 50vh;
+		&.start{
+	    opacity: 1;
+	    border: 20px solid #000;
+	    animation: circle 2.6s ease-out;
+	    animation-iteration-count: infinite;
+		}
+		&:hover{
+		border: 80px solid #000;
+		}
+		&.selected{
+		border: 40px solid #000;
+		}
+		&.selectedHover{
+		 	border: 500px solid #000;
+		background: url('../img/bg.jpg');
+		}
+
+	}
+
+	section{
+	  div{
+	    width: 50vw;
+	    margin-left: 10px;
+	    p{
+	    	display: none;
+	    }
+	  }
+	}
+
+	.access{
+	  margin-top: 50vh;
+	}
+	.back{
+	  margin-top: 50vh;
+	}
+
+	.onepage-pagination{
+		display: none;
+	}
+
+}

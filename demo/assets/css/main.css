@@ -3522,3 +3522,56 @@ a:hover {
 .onepage-pagination.start li:nth-child(6) {
   animation-delay: 3s;
 }
+
+@media (max-width: 767px) {
+  /* line 2, ../sass/main/_responsive.scss */
+  .circle {
+    width: 50vh;
+    height: 50vh;
+  }
+  /* line 5, ../sass/main/_responsive.scss */
+  .circle.start {
+    opacity: 1;
+    border: 20px solid #000;
+    animation: circle 2.6s ease-out;
+    animation-iteration-count: infinite;
+  }
+  /* line 11, ../sass/main/_responsive.scss */
+  .circle:hover {
+    border: 80px solid #000;
+  }
+  /* line 14, ../sass/main/_responsive.scss */
+  .circle.selected {
+    border: 40px solid #000;
+  }
+  /* line 17, ../sass/main/_responsive.scss */
+  .circle.selectedHover {
+    border: 500px solid #000;
+    background: url("../img/bg.jpg");
+  }
+
+  /* line 25, ../sass/main/_responsive.scss */
+  section div {
+    width: 50vw;
+    margin-left: 10px;
+  }
+  /* line 28, ../sass/main/_responsive.scss */
+  section div p {
+    display: none;
+  }
+
+  /* line 34, ../sass/main/_responsive.scss */
+  .access {
+    margin-top: 50vh;
+  }
+
+  /* line 37, ../sass/main/_responsive.scss */
+  .back {
+    margin-top: 50vh;
+  }
+
+  /* line 41, ../sass/main/_responsive.scss */
+  .onepage-pagination {
+    display: none;
+  }
+}
