@@ -33,52 +33,81 @@
       ga('create', 'UA-81344365-1', 'auto');
       ga('send', 'pageview');
     </script>
-        <a class="back-btn" href="index.html"><strong style="color: red;">-</strong> BACK</a>
+        <!-- <a class="back-btn" href="index.html"><strong style="color: red;">-</strong> BACK</a> -->
+        <ul class="main-menu" style=" 
+display: block; 
+z-index:10; 
+position: absolute;
+right: 0;
+left: 0;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+top: 38vh;
+height: auto;
+text-align: left; 
+list-style: none;">
+                <li><a href="projects.html"> SELECTED PROJECTS</a> <strong>&#9679;</strong></li>
+                <li><a href="philosophy.html"> PHILOSOPHY</a> <strong>&#9679;</strong></li>
+                <li><a href="studio.html"> STUDIO</a> <strong>&#9679;</strong></li>
+                <li><a href=""> LAB</a> <strong>&#9679;</strong></li>
+                <li><a href=""> JOURNAL</a> <strong>&#9679;</strong></li>
+                <li><a href=""> WORK WITH ME</a> <strong>&#9679;</strong></li>
+            </ul>  
         <div class="circle">
-            <div class="scroll-line"><span class="scroll">scroll</span></div>
-        </div>
+            <div class="scroll-line"><span class="scroll">MENU</span></div>
+        </div>             
+
         <!-- <img class="logo" src="assets/img/logo.png"/> -->
         <div class="main">
         <section>
             <div>
                 <h3 class="back">SELECTED PROJECTS<strong style="color: #F00;">.</strong></h3>
-                <p>A selection of projects that are representative for VIBRÅNTMATTER's style.</p>
+                <p class="description">SCROLL DOWN</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="access p1">
+                <h3><a href="project.html">arabela sim</a><strong class="red-dot">.</strong></h3>
+                <p class="description"><strong>UI/UX DESIGN & DEVELOPMENT</strong> 
+                <br> #minimal #fashion #blackandwhite #luxury #interactive
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="access p2">
+                <h3><a href="project.html">23FiLM</a><strong class="red-dot">.</strong></h3>
+                <p class="description"><strong>UI/UX DESIGN & DEVELOPMENT</strong> 
+                <br> #minimal #coloraccent #typography #bold #blackandwhite
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="access p3">
+                <h3><a href="project.html">concepto</a><strong class="red-dot"">.</strong></h3>
+                <p class="description"><strong>UI/UX DESIGN & DEVELOPMENT</strong> 
+                <br> #minimal #fashion #blackandwhite #luxury
+                </p>
             </div>
         </section>
 
         <section>
             <div>
-                <h3 class="access"><a href="project.html">arabela sim</a><strong class="red-dot">.</strong></h3>
-                <p>Vibråntmatter is an individually run multi-discipline creative studio by Sergiu-Octavian, focusing on creating digital experiences that have high sensori-emotional values built on strong functionality principles.</p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h3 class="access"><a href="project.html">23FiLM</a><strong class="red-dot">.</strong></h3>
-                <p>Vibråntmatter is an individually run multi-discipline creative studio by Sergiu-Octavian, focusing on creating digital experiences that have high sensori-emotional values built on strong functionality principles.</p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h3 class="access"><a href="project.html">concepto</a><strong class="red-dot"">.</strong></h3>
-                <p>Vibråntmatter is an individually run multi-discipline creative studio by Sergiu-Octavian, focusing on creating digital experiences that have high sensori-emotional values built on strong functionality principles.</p>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h3 class="access"><a href="project.html">verkla</a><strong class="red-dot">.</strong></h3>
-                <p>Vibråntmatter is an individually run multi-discipline creative studio by Sergiu-Octavian, focusing on creating digital experiences that have high sensori-emotional values built on strong functionality principles.</p>
+                <h3 class="access p4"><a href="project.html">verkla</a><strong class="red-dot">.</strong></h3>
+                <p class="description"><strong>UI/UX DESIGN & DEVELOPMENT</strong> 
+                <br> #environmental
+                </p>
             </div>
         </section> 
 
-        <section>
+        <!-- <section>
             <div>
                 <h3 class="back"><a a href="index.html"><strong class="red-dot"><</strong> Back to Menu</a></h3>
             </div>
-        </section>            
+        </section>  -->           
     </div>
 
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
@@ -88,7 +117,7 @@
         $( document ).ready(function() {
             $('.circle').addClass('start');
 
-            //disable right click
+            //DISABLE RIGHT CLICK
             $("body").on("contextmenu",function(e){
 
                 var bg = $("body").css('background'); // store original background
@@ -100,23 +129,50 @@
                 }, 1000); // waiting one second
 
                return false;
-
-
             }); 
+
         });
 
-            $('.access').hover(
-            function(){ $('.circle').addClass('selectedHover') },
+        $('.access').hover(
+            function(){ $('.circle').addClass('selectedHover')  },
             function(){ $('.circle').removeClass('selectedHover') }
-            )
+        )
 
-            $('.back, .back-btn').hover(
+        $('.access.p1').hover(
+            function(){ $('.circle').addClass('p1')  },
+            function(){ $('.circle').removeClass('p1') }
+        )
+
+        $('.access.p2').hover(
+            function(){ $('.circle').addClass('p2')  },
+            function(){ $('.circle').removeClass('p2') }
+        )
+
+        $('.access.p3').hover(
+            function(){ $('.circle').addClass('p3')  },
+            function(){ $('.circle').removeClass('p3') }
+        )
+
+        $('.access.p4').hover(
+            function(){ $('.circle').addClass('p4')  },
+            function(){ $('.circle').removeClass('p4') }
+        )
+        
+
+        $('.circle').hover(
+            function(){ $('.circle').addClass('selected') },
+            function(){ $('.circle').removeClass('selected') }
+        )
+
+        $('.back, .back-btn').hover(
             function(){ $('.circle').removeClass('start') },
             function(){ $('.circle').addClass('start') },
             function(){ $('.circle').removeClass('selected') },
             function(){ $('.circle').addClass('selected') }
-            
-            )
+        )
+
+        // background: #000 url('../img/bg.jpg');
+        // background-size: cover;
         
     </script>
 

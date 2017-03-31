@@ -94,7 +94,7 @@ body, .onepage-wrapper, html {
 .onepage-pagination {
   position: absolute;
   right: 70px;
-  top: 40vh;
+  top: 38vh;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -189,11 +189,11 @@ h2 {
 }
 h3 {
   font-family: 'Andale Mono', AndaleMono, monospace;
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-variant: normal;
   font-weight: 900;
-  line-height: 23px;
+  line-height: 1px;
   letter-spacing: -1px;
   text-align: right;
 }
@@ -219,7 +219,9 @@ p {
   font-variant: justify;
   font-weight: 300;
   line-height: 1;
-  text-align: right; 
+  &.description{
+      text-align: right;
+    } 
 }
 blockquote {
   font-family: 'Andale Mono', AndaleMono, monospace;
@@ -296,10 +298,10 @@ pre {
   width: 75vh;
   height: 75vh;
   border-radius: 50%;
-  background: transparent;
+  background: #fff;
   border: 0px solid #000;
 
-  z-index: 2;
+  z-index: 99;
   opacity: 0;
 
   transition: all ease 2s;
@@ -317,8 +319,27 @@ pre {
     border: 100px solid #000;
   }
   &.selectedHover{
-    border: 500px solid #000;
-    background: url('../img/bg.jpg');
+    // border: 500px solid #000;
+    border: 10px solid #000;
+    width: 120vh;
+    height: 120vh;
+    background: #000;
+  }
+  &.p1{
+    background: #000 url('../img/bg1.jpg') center;
+    background-size: cover;
+  }
+  &.p2{
+    background: #000 url('../img/bg2.jpg') center;
+    background-size: cover;
+  }
+  &.p3{
+    background: #000 url('../img/bg3.jpg') center;
+    background-size: cover;
+  }
+  &.p4{
+    background: #000 url('../img/bg4.jpg') center;
+    background-size: cover;
   }
 }
 
@@ -345,8 +366,8 @@ pre {
 //
 section{
   div{
-    width: 25vw;
-    margin-left: 10px;
+    width: 20vw;
+    margin-left: 50px;
   }
 }
 
@@ -362,11 +383,11 @@ section{
 // --------------------------------------------------
 
 .scroll-line{
-  width: 70%; 
+  width: 60%; 
   height: 1px; 
   background: #424242; 
   position: absolute; 
-  right: -54%; 
+  right: -50%; 
   top: 50%;
   display:block;
   text-align: right;
