@@ -33,39 +33,28 @@
       ga('create', 'UA-81344365-1', 'auto');
       ga('send', 'pageview');
     </script>
-        <!-- <a class="back-btn" href="index.html"><strong style="color: red;">-</strong> BACK</a> -->
-        <ul class="main-menu" style=" 
-display: block; 
-z-index:10; 
-position: absolute;
-right: 0;
-left: 0;
-margin-left: auto;
-margin-right: auto;
-width: 300px;
-top: 38vh;
-height: auto;
-text-align: left; 
-list-style: none;">
-                <li><a href="projects.html"> SELECTED PROJECTS</a> <strong>&#9679;</strong></li>
-                <li><a href="philosophy.html"> PHILOSOPHY</a> <strong>&#9679;</strong></li>
-                <li><a href="studio.html"> STUDIO</a> <strong>&#9679;</strong></li>
-                <li><a href=""> LAB</a> <strong>&#9679;</strong></li>
-                <li><a href=""> JOURNAL</a> <strong>&#9679;</strong></li>
-                <li><a href=""> WORK WITH ME</a> <strong>&#9679;</strong></li>
-            </ul>  
+        <!-- <a class="back-btn" href="index.html"><strong style="color: red;">-</strong> BACK</a> --> 
+        <ul class="main-menu-circle">
+                <li><a href="projects.html"> SELECTED PROJECTS</a></li>
+                <li><a href="philosophy.html"> PHILOSOPHY</a></li>
+                <li><a href="studio.html"> STUDIO</a></li>
+                <li><a href=""> LAB</a></li>
+                <li><a href=""> JOURNAL</a></li>
+                <li><a href=""> WORK WITH ME</a></li>
+            </ul> 
         <div class="circle">
-            <div class="scroll-line"><span class="scroll">MENU</span></div>
+            <div class="scroll-line"><span class="scroll">Menu</span></div>
+            
         </div>             
 
         <!-- <img class="logo" src="assets/img/logo.png"/> -->
         <div class="main">
-        <section>
+<!--         <section>
             <div>
                 <h3 class="back">SELECTED PROJECTS<strong style="color: #F00;">.</strong></h3>
-                <p class="description">SCROLL DOWN</p>
+                <p class="description"></p>
             </div>
-        </section>
+        </section> -->
 
         <section>
             <div class="access p1">
@@ -118,18 +107,18 @@ list-style: none;">
             $('.circle').addClass('start');
 
             //DISABLE RIGHT CLICK
-            $("body").on("contextmenu",function(e){
+            // $("body").on("contextmenu",function(e){
 
-                var bg = $("body").css('background'); // store original background
-                $("body").css('background', '#F00'); //change second element background
-                $("body > div:not('.circle')").css('opacity', '0.2');
-                setTimeout(function() {
-                    $("body").css('background', bg); // change it back after ...
-                    $("body > div:not('.circle') ").css('opacity', '1');
-                }, 1000); // waiting one second
+            //     var bg = $("body").css('background'); // store original background
+            //     $("body").css('background', '#F00'); //change second element background
+            //     $("body > div:not('.circle')").css('opacity', '0.2');
+            //     setTimeout(function() {
+            //         $("body").css('background', bg); // change it back after ...
+            //         $("body > div:not('.circle') ").css('opacity', '1');
+            //     }, 1000); // waiting one second
 
-               return false;
-            }); 
+            //    return false;
+            // }); 
 
         });
 
@@ -171,8 +160,12 @@ list-style: none;">
             function(){ $('.circle').addClass('selected') }
         )
 
-        // background: #000 url('../img/bg.jpg');
-        // background-size: cover;
+        $( ".circle" ).on( "click", function() {
+          $(this).addClass('selectedHover');
+          $('.main-menu-circle').addClass('show');
+          $('body').css('background','#131313');
+          $('.main, .onepage-pagination').addClass('hide');
+        });
         
     </script>
 

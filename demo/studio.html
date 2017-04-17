@@ -50,20 +50,20 @@
         $( document ).ready(function() {
             $('.circle').addClass('start');
             //disable right click
-            $("body").on("contextmenu",function(e){
+            // $("body").on("contextmenu",function(e){
 
-                var bg = $("body").css('background'); // store original background
-                $("body").css('background', '#F00'); //change second element background
-                $("body > div:not('.circle')").css('opacity', '0.2');
-                setTimeout(function() {
-                    $("body").css('background', bg); // change it back after ...
-                    $("body > div:not('.circle') ").css('opacity', '1');
-                }, 1000); // waiting one second
+            //     var bg = $("body").css('background'); // store original background
+            //     $("body").css('background', '#F00'); //change second element background
+            //     $("body > div:not('.circle')").css('opacity', '0.2');
+            //     setTimeout(function() {
+            //         $("body").css('background', bg); // change it back after ...
+            //         $("body > div:not('.circle') ").css('opacity', '1');
+            //     }, 1000); // waiting one second
 
-               return false;
+            //    return false;
 
 
-            }); 
+            // }); 
         });
 
 function goBack() {

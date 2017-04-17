@@ -177,7 +177,16 @@ body {
   // background:  url('../img/bg.jpg')no-repeat;
   background: #ffffff;
   // background-size: cover;
+  // font-family: 'Andale Mono', AndaleMono, monospace;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+h1 {
   font-family: 'Andale Mono', AndaleMono, monospace;
+  font-size: 43px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 43px;
 }
 h2 {
   font-family: 'Andale Mono', AndaleMono, monospace;
@@ -207,6 +216,7 @@ h3 a{
   letter-spacing: -1px;
   text-align: right;
   color: #000;
+  text-decoration: underline;
   opacity: 1;
   &:hover{
     color: #ccc;
@@ -217,8 +227,8 @@ p {
   font-size: 12px;
   font-style: justify;
   font-variant: justify;
-  font-weight: 300;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 1.5;
   &.description{
       text-align: right;
     } 
@@ -295,12 +305,12 @@ pre {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 75vh;
-  height: 75vh;
+  width: 65vh;
+  height: 65vh;
   border-radius: 50%;
   background: #fff;
   border: 0px solid #000;
-
+  cursor: pointer;
   z-index: 99;
   opacity: 0;
 
@@ -311,7 +321,6 @@ pre {
     animation: circle 2.6s ease-out;
     animation-iteration-count: infinite;
   }
-  z-index: 0;
   &:hover{
     border: 300px solid #000;
   }
@@ -320,10 +329,16 @@ pre {
   }
   &.selectedHover{
     // border: 500px solid #000;
-    border: 10px solid #000;
-    width: 120vh;
-    height: 120vh;
+    border: 0px solid #000;
+    width: 50vh;
+    height: 50vh;
     background: #000;
+  }
+  &.header-project{
+    border: 0px solid #000;
+    background: #000;
+    width: 75vh;
+    height: 75vh;
   }
   &.p1{
     background: #000 url('../img/bg1.jpg') center;
@@ -435,6 +450,29 @@ a {
     text-decoration: none;
   }
 }
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+
+.main-menu-circle{
+  padding: 0;
+  display: none; 
+  z-index: 999; 
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  top: 42vh;
+  height: auto;
+  text-align: center; 
+  list-style: none;
+}
+
 //
 // =Sections
 // --------------------------------------------------
@@ -478,9 +516,56 @@ a {
 .onepage-pagination.start li:nth-child(5) { animation-delay: 2.5s }
 .onepage-pagination.start li:nth-child(6) { animation-delay: 3s }
 //
-// =Testimonials
+// =PROJECT
 // --------------------------------------------------
+  .circle{
+    &.secondary{
+      width:100px; 
+      height: 100px; 
+      // top: -60vh; 
+      background: transparent; 
+      cursor:pointer;
+      opacity: 0.5;
+      // border-color: #ccc;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  .main{
+    width: 100%;
+    .header{
+      width: 100%;
+    }
+    .content{
+      width: 50vw;
+      margin: 0 auto; 
+      padding: 35vh 0; 
+      text-align: justify; 
+      hyphens: auto; 
 
+      h1{
+        font-weight: 900;
+        margin: 20vw 10vw 2vh;
+      }
+      h2{
+        margin: 2vh 10vw;
+        font-size: 12px;
+      }
+      p{
+
+        margin: 2vh 10vw;
+      }
+      img{
+        margin: 10px auto; 
+        display: block
+      }
+    }
+    .presentation{
+      width: 100%;
+      border: 10vw solid #191919;
+    }
+  }
 //
 // =Benefits
 // --------------------------------------------------

@@ -33,17 +33,47 @@
       ga('create', 'UA-81344365-1', 'auto');
       ga('send', 'pageview');
     </script>
-        <a href="projects.html"><div class="circle" style="width:200px; height: 200px; top: -60vh; background: transparent; cursor:pointer;"><div class="scroll-line"><span class="scrdedoll">scroll</span></div></div></a>
 
-        <div style="width: 33vw; text-align: justify; hyphens: auto; margin: 0 auto; padding: 35vh 0;">
-            <h2 style="font-size: 24px; text-align: center;">Project Name<strong style="color: red;"">.</strong></h2>
-            <p style="text-align: center;">UI / UX & DEVELOPMENT</p>
-            <br>
-            <p style="font-size: 12px;">Everything looks still into our eyes, but the world is vibrating. All material things are vibrating at us in this moment and we are vibrating at them.</p>
-            <p style="font-size: 12px;">The creative process can be defined as the action of deconstructing something in order to reconstruct it in a different way. In this process, new vibratons are created and once we recognize that all matter is actually vibrating energy, we can begin to form a new vision for the world, ethics and interaction. </p>
-            <img style="margin: 0 auto; display: block" src="assets/img/sig-grey.png"/>      
-        </div>   
-        <img width="100%" style="border: 10vw solid #191919" src="assets/img/presentation3.jpg"/> 
+    <ul class="main-menu-circle">
+        <li><a href="projects.html"> SELECTED PROJECTS</a></li>
+        <li><a href="philosophy.html"> PHILOSOPHY</a></li>
+        <li><a href="studio.html"> STUDIO</a></li>
+        <li><a href=""> LAB</a></li>
+        <li><a href=""> JOURNAL</a></li>
+        <li><a href=""> WORK WITH ME</a></li>
+    </ul> 
+    <div class="circle"><!-- <div class="scroll-line"><span class="scrdedoll">Menu</span></div> --></div>
+    <section>
+        <div class="access">
+            <h3>arabela sim<strong class="red-dot">.</strong></h3>
+            <p class="description"><strong>UI/UX DESIGN & DEVELOPMENT</strong> 
+            <br> #minimal #fashion #blackandwhite #luxury #interactive</p>
+        </div>
+    </section>
+    <div class="main" style="margin-top: 100vh;">
+        <section>
+            <div class="content">
+                
+                <br>
+                <p>In the Summer of 2016, Simon Rogers, Google News Labs’ data editor, and Alberto Cairo, the Knight Chair in Visual Journalism at the University of Miami, contacted Accurat to lead one of the projects in a series of experiments to work with renowned global data visualization teams to find new ways of using Google data in newsrooms. The 2016 US presidential election was approaching and interest around it was spiking. The president of the United States is often described as the “leader of the free world” and this de facto leadership is indeed perceived directly or indirectly in many corners of the globe, but very few ask or measure how the rest of the free world perceives this. Starting from this very simple concept, Accurat proposed to use Google Trends data to measure the interest in the candidates in relation to top political issues, but outside the US.</p>
+                <br>
+                <img src="assets/img/sig-grey.png"/> 
+            </div>
+         <!--    <div class="content">
+                <img class="header" src="assets/img/bg1.jpg">  
+            </div>   -->
+        </section>
+
+        <!-- <section>
+            <p>Accurat conceptualized, designed, and developed both the back-end and the front-end of WorldPOTUS, a React and WebGL interactive web and mobile application that displays how people around the world search for the key issues of the election associated with the two candidates, Hillary Clinton and Donald J.Trump.</p>
+        </section>
+        <section>
+            <p>'By looking at searches for each candidate and how they differ in each country, WorldPOTUS shows real-time worldwide variations in searches — and which region is interested in each of the major election issues. The topics — Abortion, Black Lives Matter, Brexit, Economy, Foreign Policy, Global Warming, Gun Control, Healthcare, ISIS, Oil, Racism, Refugees, Same Sex Marriage, TPP — are selected based on the top issues of the campaign as decided by their ranking in Google search on average in 2016. But, why these wobbly bubbles? Shouldn’t data visualization always be rigorous and precise? The Google Trends Index is a valuable and insightful way to gauge the general sense of a country’s interest in a topic over time, but it shouldn't be considered a perfect and ultimate measure of it. Opinions on such delicate topics are often a fluid and ever-changing blob and, for this reason, Accurat worked on a “softer” depiction of data, in a way, that faithfully renders the fluidity and fuzziness of conversations around the world – a deliberately imperfect visual to grasp and display a meaningful and rich, but very human, dataset.'</p>
+        </section> -->
+        <section>
+            <img class="presentation" src="assets/img/presentation3.jpg"/> 
+        </section>
+    </div>
 
 
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
@@ -52,9 +82,30 @@
     <script>
         $( document ).ready(function() {
             $('.circle').addClass('start');
+            $('.circle').addClass('header-project');
+            $('.circle').addClass('p1');
+            //on scroll circle change size
+            $(window).scroll(function() {    
+                var scroll = $(window).scrollTop();
+
+                if(scroll >= 50) {
+                    $(".circle").addClass("secondary");
+                    $('.circle').removeClass('header-project');
+                } else {
+                    $(".circle").removeClass("secondary");
+                    $('.circle').addClass('header-project');
+                }
+            });
+
+            $( ".circle" ).on( "click", function() {
+              $(this).addClass('selectedHover');
+              $('.main-menu-circle').addClass('show');
+              $('body').css('background','#131313');
+              $('.main, .onepage-pagination').addClass('hide');
+            });
+
             //disable right click
             $("body").on("contextmenu",function(e){
-
                 var bg = $("body").css('background'); // store original background
                 $("body").css('background', '#F00'); //change second element background
                 $("body > div:not('.circle')").css('opacity', '0.2');
@@ -62,13 +113,10 @@
                     $("body").css('background', bg); // change it back after ...
                     $("body > div:not('.circle') ").css('opacity', '1');
                 }, 1000); // waiting one second
-
                return false;
-
-
             }); 
         });
-
+        
 </script>
 </body>
 </html>
