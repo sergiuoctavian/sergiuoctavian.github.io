@@ -42,9 +42,9 @@
         <li><a href=""> JOURNAL</a></li>
         <li><a href=""> WORK WITH ME</a></li>
     </ul> 
-    <div class="menu-overlay hide"></div>
+    <div class="menu-overlay"></div>
     <div class="circle">
-        <h3 class="menu-title">MENU</h3>
+        <p class="menu-title">MENU</p>
         <div class="scroll-line-vertical">
             <span class="scroll">scroll</span>
         </div>
@@ -104,29 +104,42 @@
                     $(".circle").addClass("secondary");
                     $('.circle').removeClass('header-project');
                     $('.scroll-line-vertical').addClass("hide");
+                    $('.menu-title').addClass('show');
 
-                    $( ".circle" ).on( "click", function() {
+                    $('.circle').click(function(){
+                      $(this).removeClass('secondary');
                       $(this).addClass('selectedHover');
+                      $(this).removeClass('p1');
+                      $('.menu-overlay').addClass('show');
                       $('.main-menu-circle').addClass('show');
-                      $('.menu-overlay').removeClass('hide');
-                      $('.main, .onepage-pagination').addClass('hide');
-                      $('.circle').removeClass('p1');
                     });
 
-                    $('.circle').hover(
-                        function(){ $('.menu-title').addClass('show')  },
-                        function(){ $('.menu-title').removeClass('show') }
-                    )
+                    $('.menu-overlay').click(function (e) {  
+                        if ($(this).hasClass('show')) {
+                            if (!$('.circle').is(e.target) && !$('a').is(e.target) && !$('.main-menu-circle').is(e.target)) {
+                                $('.menu-overlay').removeClass('show');
+                                $('.main-menu-circle').removeClass('show');
+                                $('.main, .onepage-pagination').removeClass('hide');
+                                $(".circle").addClass("secondary");
+                                $('.circle').addClass('p1');
+                            }
+                        }
+                    });
+
+
+                    // $('.circle').hover(
+                    //     function(){ $('.menu-title').addClass('show')  },
+                    //     function(){ $('.menu-title').removeClass('show') }
+                    // )
 
                 } else {
                     $(".circle").removeClass("secondary");
                     $('.circle').addClass('header-project');
                     $('.scroll-line-vertical').removeClass("hide");
+                    $('.menu-title').removeClass('show');
                 }
             });
-
             
-
             //disable right click
             // $("body").on("contextmenu",function(e){
             //     var bg = $("body").css('background'); // store original background

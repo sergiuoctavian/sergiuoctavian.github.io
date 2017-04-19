@@ -315,6 +315,7 @@ pre {
   opacity: 0;
 
   transition: all ease 2s;
+  -webkit-transition: all ease 2s;
   &.start{
     opacity: 1;
     border: 20px solid #000;
@@ -325,13 +326,13 @@ pre {
     border: 300px solid #000;
   }
   &.selected{
-    border: 100px solid #000;
+    border: 80px solid #000;
   }
   &.selectedHover{
     // border: 500px solid #000;
     border: 0px solid #000;
-    width: 50vh;
-    height: 50vh;
+    // width: 50vh;
+    // height: 50vh;
     background: #000;
   }
   &.header-project{
@@ -341,20 +342,37 @@ pre {
     height: 75vh;
   }
   &.p1{
-    background: #000 url('../img/bg1.jpg') center;
+    background: #000 url('../img/bg1.jpg') ;
     background-size: cover;
+    border: 0px solid #000;
   }
   &.p2{
-    background: #000 url('../img/bg2.jpg') center;
+    background: #000 url('../img/bg2.jpg') ;
     background-size: cover;
+    border: 0px solid #000;
   }
   &.p3{
-    background: #000 url('../img/bg3.jpg') center;
+    background: #000 url('../img/bg3.jpg') ;
     background-size: cover;
+    border: 0px solid #000;
   }
   &.p4{
-    background: #000 url('../img/bg4.jpg') center;
+    background: #000 url('../img/bg4.jpg') ;
     background-size: cover;
+    border: 0px solid #000;
+  }
+  &.secondary{
+    width:100px; 
+    height: 100px; 
+    // top: -60vh; 
+    background: transparent; 
+    cursor:pointer;
+    opacity: 0.5;
+    border: 20px solid #000;
+    &:hover{
+      opacity: 1;
+      background: #000;
+    }
   }
 }
 
@@ -427,7 +445,7 @@ section{
   margin-right: 20px; 
   margin-top: -16px; 
   font-size: 12px; 
-  color: #131313;
+  color: #424242;
 }
 ul{
   &.main-menu{
@@ -480,7 +498,7 @@ a {
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 200px;
   top: 42vh;
   height: auto;
   text-align: center; 
@@ -489,9 +507,18 @@ a {
 
 .menu-title{
   display: none;
+  color: red;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .menu-overlay{
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -500,6 +527,7 @@ a {
   width: 100%;
   height: 100%;
   background: #131313;
+  z-index: 10;
 }
 //
 // =Sections
@@ -546,20 +574,6 @@ a {
 //
 // =PROJECT
 // --------------------------------------------------
-  .circle{
-    &.secondary{
-      width:100px; 
-      height: 100px; 
-      // top: -60vh; 
-      background: transparent; 
-      cursor:pointer;
-      opacity: 0.5;
-      // border-color: #ccc;
-      &:hover{
-        opacity: 1;
-      }
-    }
-  }
   .main{
     width: 100%;
     .header{

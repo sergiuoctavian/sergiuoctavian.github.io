@@ -41,7 +41,8 @@
                 <li><a href=""> LAB</a></li>
                 <li><a href=""> JOURNAL</a></li>
                 <li><a href=""> WORK WITH ME</a></li>
-            </ul> 
+        </ul> 
+        <div class="menu-overlay"></div>
         <div class="circle">
             <div class="scroll-line"><span class="scroll">Menu</span></div>
             
@@ -122,29 +123,29 @@
 
         });
 
-        $('.access').hover(
-            function(){ $('.circle').addClass('selectedHover')  },
-            function(){ $('.circle').removeClass('selectedHover') }
-        )
+        // $('.access').hover(
+        //     function(){ $('.circle').addClass('selectedHover')  },
+        //     function(){ $('.circle').removeClass('selectedHover') }
+        // )
 
         $('.access.p1').hover(
-            function(){ $('.circle').addClass('p1')  },
-            function(){ $('.circle').removeClass('p1') }
+            function(){ $('.circle').addClass('p1'); $('.scroll:contains("Menu")').text("project details"); },
+            function(){ $('.circle').removeClass('p1'); $('.scroll:contains("project details")').text("Menu"); }
         )
 
         $('.access.p2').hover(
-            function(){ $('.circle').addClass('p2')  },
-            function(){ $('.circle').removeClass('p2') }
+            function(){ $('.circle').addClass('p2'); $('.scroll:contains("Menu")').text("project details");   },
+            function(){ $('.circle').removeClass('p2'); $('.scroll:contains("project details")').text("Menu");  }
         )
 
         $('.access.p3').hover(
-            function(){ $('.circle').addClass('p3')  },
-            function(){ $('.circle').removeClass('p3') }
+            function(){ $('.circle').addClass('p3'); $('.scroll:contains("Menu")').text("project details");   },
+            function(){ $('.circle').removeClass('p3'); $('.scroll:contains("project details")').text("Menu");  }
         )
 
         $('.access.p4').hover(
-            function(){ $('.circle').addClass('p4')  },
-            function(){ $('.circle').removeClass('p4') }
+            function(){ $('.circle').addClass('p4'); $('.scroll:contains("Menu")').text("project details");   },
+            function(){ $('.circle').removeClass('p4'); $('.scroll:contains("project details")').text("Menu");  }
         )
         
 
@@ -153,19 +154,29 @@
             function(){ $('.circle').removeClass('selected') }
         )
 
-        $('.back, .back-btn').hover(
-            function(){ $('.circle').removeClass('start') },
-            function(){ $('.circle').addClass('start') },
-            function(){ $('.circle').removeClass('selected') },
-            function(){ $('.circle').addClass('selected') }
-        )
+        // $('.back, .back-btn').hover(
+        //     function(){ $('.circle').removeClass('start') },
+        //     function(){ $('.circle').addClass('start') },
+        //     function(){ $('.circle').removeClass('selected') },
+        //     function(){ $('.circle').addClass('selected') }
+        // )
 
-        $( ".circle" ).on( "click", function() {
-          $(this).addClass('selectedHover');
-          $('.main-menu-circle').addClass('show');
-          $('body').css('background','#131313');
-          $('.main, .onepage-pagination').addClass('hide');
-        });
+        $('.circle').click(function(){
+              $(this).addClass('selectedHover');
+              $(this).removeClass('p1');
+              $('.menu-overlay').addClass('show');
+              $('.main-menu-circle').addClass('show');
+            });
+
+            $('.menu-overlay').click(function (e) {  
+                if ($(this).hasClass('show')) {
+                    if (!$('.circle').is(e.target) && !$('a').is(e.target) && !$('.main-menu-circle').is(e.target)) {
+                        $('.menu-overlay').removeClass('show');
+                        $('.main-menu-circle').removeClass('show');
+                        $('.circle').removeClass('selectedHover');
+                    }
+                }
+            });
         
     </script>
 

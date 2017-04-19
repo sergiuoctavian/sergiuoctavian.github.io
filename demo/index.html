@@ -36,14 +36,14 @@
 
     <a href="projects.html">
         <div class="circle" style="background: transparent;">
-            <div class="scroll-line"><span class="scroll" style="color: #fff;">selected projects</span></div>
+            <div class="scroll-line"><span class="scroll" style="color: #484848;">design & build</span></div>
         </div>
     </a>
     <!-- <p style="width: 20vw; position: absolute; left:30vw;margin: 20px;top: 50vh;">Individually run multi-discipline creative studio by Sergiu-OCtavian, focusing on creating digital experiences that have high sensori-emotional values built on strong functionality principles.</p> -->
-    <ul class="main-menu">
+    <!-- <ul class="main-menu">
         <li><a href="studio.html"> STUDIO</a> <strong>&#9679;</strong></li>
         <li><a href="philosophy.html"> PHILOSOPHY</a> <strong>&#9679;</strong></li>
-    </ul>               
+    </ul>    -->            
     
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
     <script src="assets/js/particles.js"></script>
@@ -52,6 +52,10 @@
         $( document ).ready(function() {
             $('.circle').addClass('start');
             $('.main-menu').addClass('start');
+            $('.circle').hover(
+                function(){$('.scroll').addClass("hide");},
+                function(){$('.scroll').removeClass("hide");},
+            )
             //disable right click
             // $("body").on("contextmenu",function(e){
 
