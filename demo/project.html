@@ -42,7 +42,13 @@
         <li><a href=""> JOURNAL</a></li>
         <li><a href=""> WORK WITH ME</a></li>
     </ul> 
-    <div class="circle"><!-- <div class="scroll-line"><span class="scrdedoll">Menu</span></div> --></div>
+    <div class="menu-overlay hide"></div>
+    <div class="circle">
+        <h3 class="menu-title">MENU</h3>
+        <div class="scroll-line-vertical">
+            <span class="scroll">scroll</span>
+        </div>
+    </div>
     <section>
         <div class="access">
             <h3>arabela sim<strong class="red-dot">.</strong></h3>
@@ -71,7 +77,13 @@
             <p>'By looking at searches for each candidate and how they differ in each country, WorldPOTUS shows real-time worldwide variations in searches — and which region is interested in each of the major election issues. The topics — Abortion, Black Lives Matter, Brexit, Economy, Foreign Policy, Global Warming, Gun Control, Healthcare, ISIS, Oil, Racism, Refugees, Same Sex Marriage, TPP — are selected based on the top issues of the campaign as decided by their ranking in Google search on average in 2016. But, why these wobbly bubbles? Shouldn’t data visualization always be rigorous and precise? The Google Trends Index is a valuable and insightful way to gauge the general sense of a country’s interest in a topic over time, but it shouldn't be considered a perfect and ultimate measure of it. Opinions on such delicate topics are often a fluid and ever-changing blob and, for this reason, Accurat worked on a “softer” depiction of data, in a way, that faithfully renders the fluidity and fuzziness of conversations around the world – a deliberately imperfect visual to grasp and display a meaningful and rich, but very human, dataset.'</p>
         </section> -->
         <section>
-            <img class="presentation" src="assets/img/presentation3.jpg"/> 
+            <img class="presentation" src="assets/img/presentation.jpg"/> 
+        </section>
+        <section>
+
+        </section>
+        <section>
+            <img class="presentation" src="assets/img/presentation2.jpg"/> 
         </section>
     </div>
 
@@ -88,33 +100,44 @@
             $(window).scroll(function() {    
                 var scroll = $(window).scrollTop();
 
-                if(scroll >= 50) {
+                if(scroll >= 500) {
                     $(".circle").addClass("secondary");
                     $('.circle').removeClass('header-project');
+                    $('.scroll-line-vertical').addClass("hide");
+
+                    $( ".circle" ).on( "click", function() {
+                      $(this).addClass('selectedHover');
+                      $('.main-menu-circle').addClass('show');
+                      $('.menu-overlay').removeClass('hide');
+                      $('.main, .onepage-pagination').addClass('hide');
+                      $('.circle').removeClass('p1');
+                    });
+
+                    $('.circle').hover(
+                        function(){ $('.menu-title').addClass('show')  },
+                        function(){ $('.menu-title').removeClass('show') }
+                    )
+
                 } else {
                     $(".circle").removeClass("secondary");
                     $('.circle').addClass('header-project');
+                    $('.scroll-line-vertical').removeClass("hide");
                 }
             });
 
-            $( ".circle" ).on( "click", function() {
-              $(this).addClass('selectedHover');
-              $('.main-menu-circle').addClass('show');
-              $('body').css('background','#131313');
-              $('.main, .onepage-pagination').addClass('hide');
-            });
+            
 
             //disable right click
-            $("body").on("contextmenu",function(e){
-                var bg = $("body").css('background'); // store original background
-                $("body").css('background', '#F00'); //change second element background
-                $("body > div:not('.circle')").css('opacity', '0.2');
-                setTimeout(function() {
-                    $("body").css('background', bg); // change it back after ...
-                    $("body > div:not('.circle') ").css('opacity', '1');
-                }, 1000); // waiting one second
-               return false;
-            }); 
+            // $("body").on("contextmenu",function(e){
+            //     var bg = $("body").css('background'); // store original background
+            //     $("body").css('background', '#F00'); //change second element background
+            //     $("body > div:not('.circle')").css('opacity', '0.2');
+            //     setTimeout(function() {
+            //         $("body").css('background', bg); // change it back after ...
+            //         $("body > div:not('.circle') ").css('opacity', '1');
+            //     }, 1000); // waiting one second
+            //    return false;
+            // }); 
         });
         
 </script>

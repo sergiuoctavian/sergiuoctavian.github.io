@@ -407,13 +407,27 @@ section{
   display:block;
   text-align: right;
 }
+.scroll-line-vertical{
+  width: 20%;
+  height: 1px;
+  background: #424242;
+  position: absolute;
+  bottom: -1%;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: right;
+  transform: rotate(90deg); 
+}
 .scroll{
   float: right; 
   text-transform:uppercase; 
   margin-right: 20px; 
   margin-top: -16px; 
   font-size: 12px; 
-  color: #000;
+  color: #131313;
 }
 ul{
   &.main-menu{
@@ -461,7 +475,7 @@ a {
   padding: 0;
   display: none; 
   z-index: 999; 
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   margin-left: auto;
@@ -473,6 +487,20 @@ a {
   list-style: none;
 }
 
+.menu-title{
+  display: none;
+}
+
+.menu-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #131313;
+}
 //
 // =Sections
 // --------------------------------------------------
