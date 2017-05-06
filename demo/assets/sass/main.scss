@@ -94,7 +94,7 @@ body, .onepage-wrapper, html {
 .onepage-pagination {
   position: absolute;
   right: 70px;
-  top: 38vh;
+  top: 50vh;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -114,16 +114,16 @@ body, .onepage-wrapper, html {
   }
 }
 .onepage-pagination li a{
-  padding: 20px;
-  width: 4px;
-  height: 4px;
+  padding: 5px 0px;
+  width: 100px;
+  height: 5px;
   display: block;
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 44px;
-  height: 10px;
+  width: 120px;
+  height: 5px;
   background: rgba(0,0,0,0.15);
   -webkit-transition: all 180ms;
   -moz-transition: all 180ms;
@@ -131,15 +131,16 @@ body, .onepage-wrapper, html {
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background: #f00;
   // border: 1px solid black;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-  margin-top: -4px;
-  left: 18px;
+  // margin-top: -4px;
+  // left: 18px;
+  // padding: 5px 0px;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
@@ -178,10 +179,10 @@ body {
   background: #ffffff;
   // background-size: cover;
   // font-family: 'Andale Mono', AndaleMono, monospace;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: 'SK-Modernist', sans-serif;
 }
 h1 {
-  font-family: 'Andale Mono', AndaleMono, monospace;
+  font-family: 'SK-Modernist', sans-serif;
   font-size: 43px;
   font-style: normal;
   font-variant: normal;
@@ -189,7 +190,7 @@ h1 {
   line-height: 43px;
 }
 h2 {
-  font-family: 'Andale Mono', AndaleMono, monospace;
+  font-family: 'SK-Modernist', sans-serif;
   font-size: 43px;
   font-style: normal;
   font-variant: normal;
@@ -197,7 +198,7 @@ h2 {
   line-height: 43px;
 }
 h3 {
-  font-family: 'Andale Mono', AndaleMono, monospace;
+  font-family: 'SK-Modernist', sans-serif;
   font-size: 21px;
   font-style: normal;
   font-variant: normal;
@@ -207,23 +208,23 @@ h3 {
   text-align: right;
 }
 h3 a{
-  font-family: 'Andale Mono', AndaleMono, monospace;
-  font-size: 20px;
+  font-family: 'SK-Modernist', sans-serif;
+  font-size: 46px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 900;
-  line-height: 23px;
-  letter-spacing: -1px;
+  font-weight: 200;
+  line-height: 13px;
+  letter-spacing: 1px;
   text-align: right;
   color: #000;
-  text-decoration: underline;
+  // text-decoration: underline;
   opacity: 1;
   &:hover{
     color: #ccc;
   }
 }
 p {
-  font-family: 'Andale Mono', AndaleMono, monospace;
+  font-family: 'SK-Modernist', sans-serif;
   font-size: 12px;
   font-style: justify;
   font-variant: justify;
@@ -305,11 +306,11 @@ pre {
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
-  width: 65vh;
-  height: 65vh;
+  width: 55vh;
+  height: 55vh;
   border-radius: 50%;
-  background: #fff;
-  border: 0px solid #000;
+  // background: #fff;
+  border: 0px solid #333;
   cursor: pointer;
   z-index: 99;
   opacity: 0;
@@ -318,48 +319,48 @@ pre {
   -webkit-transition: all ease 2s;
   &.start{
     opacity: 1;
-    border: 20px solid #000;
+    border: 20px solid #333;
     animation: circle 2.6s ease-out;
     animation-iteration-count: infinite;
   }
   &:hover{
-    border: 300px solid #000;
+    border: 50px solid #333;
   }
   &.selected{
-    border: 80px solid #000;
+    border: 50px solid #333;
   }
   &.selectedHover{
     // border: 500px solid #000;
-    border: 0px solid #000;
+    border: 0px solid #333;
     // width: 50vh;
     // height: 50vh;
-    background: #000;
+    background: #333;
   }
   &.header-project{
-    border: 0px solid #000;
-    background: #000;
+    border: 0px solid #333;
+    background: #333;
     width: 75vh;
     height: 75vh;
   }
   &.p1{
-    background: #000 url('../img/bg1.jpg') ;
+    background: #333 url('../img/bg1.jpg') ;
     background-size: cover;
-    border: 0px solid #000;
+    border: 0px solid #333;
   }
   &.p2{
-    background: #000 url('../img/bg2.jpg') ;
+    background: #333 url('../img/bg2.jpg') ;
     background-size: cover;
-    border: 0px solid #000;
+    border: 0px solid #333;
   }
   &.p3{
-    background: #000 url('../img/bg3.jpg') ;
+    background: #333 url('../img/bg3.jpg') ;
     background-size: cover;
-    border: 0px solid #000;
+    border: 0px solid #333;
   }
   &.p4{
-    background: #000 url('../img/bg4.jpg') ;
+    background: #333 url('../img/bg4.jpg') ;
     background-size: cover;
-    border: 0px solid #000;
+    border: 0px solid #333;
   }
   &.secondary{
     width:100px; 
@@ -368,10 +369,10 @@ pre {
     background: transparent; 
     cursor:pointer;
     opacity: 0.5;
-    border: 20px solid #000;
+    border: 20px solid #333;
     &:hover{
       opacity: 1;
-      background: #000;
+      background: #333;
     }
   }
 }
@@ -400,7 +401,7 @@ pre {
 section{
   div{
     width: 20vw;
-    margin-left: 50px;
+    margin-left: 80px;
   }
 }
 
@@ -416,12 +417,12 @@ section{
 // --------------------------------------------------
 
 .scroll-line{
-  width: 60%; 
+  width: 40%; 
   height: 1px; 
   background: #424242; 
   position: absolute; 
-  right: -50%; 
-  top: 50%;
+  left: -30%; 
+  top: 53%;
   display:block;
   text-align: right;
 }
