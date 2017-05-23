@@ -196,9 +196,30 @@ hr{
 
 
 @media (max-width: 767px) {
+  .circle{
+    width: 150px;
+    height: 150px;
+    border: 29px solid #222;
+    top: -40vh;
+  }
+  .v-segment{
+    width: auto;
+    margin: 30px;
+    text-align: center;
+  }
+  .index .v-page{
+    margin-top: 55vh; 
+  }
+  .description{
+    display: none;
+  }
+  .v-project-title{
+    font-size: 10vw;
+    text-align: right;
+  }
   .v-header-type-2{
-  font-size: 8vw;
-}
+    font-size: 8vw;
+  }
   .v-col-3, .v-col-2{
     width: 95%;
   }
