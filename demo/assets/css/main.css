@@ -3069,7 +3069,7 @@ body, .onepage-wrapper, html {
 }
 /* line 111, ../sass/main.scss */
 .onepage-pagination li:hover a:before {
-  background: #222;
+  background: #333;
 }
 
 /* line 116, ../sass/main.scss */
