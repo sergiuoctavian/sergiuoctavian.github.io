@@ -139,6 +139,7 @@ html,body{
 .v-statement{
   float: left;
   font-size: 9vw; 
+  clear: both;
 }
 .v-project-name{
   color: #fff;
@@ -155,6 +156,10 @@ html,body{
 .v-hero{
   padding-top: 33%;
 }
+.v-year{
+  clear: both;
+  text-transform: uppercase;
+}
 .typeface-name{
   text-align: right;
 }
@@ -164,6 +169,9 @@ html,body{
   text-decoration: none;
   font-size: 14px;
   font-weight: 600; 
+}
+.v-btn-2{
+  color: #fff;
 }
 a{
   color: #222;
