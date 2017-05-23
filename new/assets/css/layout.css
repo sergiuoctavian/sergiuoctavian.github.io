@@ -191,6 +191,7 @@ html,body{
 
 .film:hover, .arabela:hover{
   opacity: 0.2;
+  background-position: 200%; 
 }
 a{
   color: #222;
