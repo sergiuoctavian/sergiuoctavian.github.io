@@ -196,6 +196,9 @@ hr{
 
 
 @media (max-width: 767px) {
+  .v-header-type-2{
+  font-size: 8vw;
+}
   .v-col-3, .v-col-2{
     width: 95%;
   }
