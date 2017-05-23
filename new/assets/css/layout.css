@@ -207,15 +207,15 @@ hr{
     margin: 30px;
     text-align: center;
   }
-  .index .v-page{
-    margin-top: 55vh; 
-  }
   .description{
     display: none;
   }
   .v-project-title{
     font-size: 10vw;
     text-align: right;
+  }
+  .projects{
+    margin-top: 55vh; 
   }
   .v-header-type-2{
     font-size: 8vw;
