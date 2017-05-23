@@ -179,7 +179,9 @@ html,body{
 .v-btn-2:hover{
 
 }
-
+.red{
+  color: #f00;
+}
 .v-segment-wide.film{
   background: url('../img/bg2.jpg')no-repeat 50% 40%; 
   background-size: cover;
