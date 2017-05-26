@@ -256,6 +256,7 @@ hr{
   display: inline-block;
   vertical-align: middle;
   transition: background-color 2s linear;
+  overflow: hidden;
 }
 .box:hover {
   background-color: #fff;
