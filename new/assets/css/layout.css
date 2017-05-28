@@ -121,6 +121,7 @@ html,body{
   text-decoration: none;
   font-size: 3vw;
   color: #000;
+  margin: 0;
 }
 .description{
   text-align: right;
@@ -183,7 +184,7 @@ html,body{
   color: #f00;
 }
 .v-segment-wide.film{
-  background: url('../img/bg2.jpg')no-repeat 50% 40%; 
+  background: url('../img/23film.jpg')no-repeat 50% 40%; 
   background-size: cover;
 }
 .v-segment-wide.arabela{
@@ -227,7 +228,7 @@ hr{
 
 @keyframes pulse {
   70% {
-    background-color: #ff80ff;
+    background-color: #f00;
   }
 }
 .boxx{
@@ -243,7 +244,7 @@ hr{
 .box {
   -webkit-filter: contrast(30);
   filter: contrast(30);
-  box-shadow: -50px 50px 100px rgba(0,0,0,0.5);
+  /*box-shadow: -50px 50px 100px rgba(0,0,0,0.5);*/
   background-color: black;
   border-radius: 50%;
   font-size: 10em;
@@ -259,11 +260,11 @@ hr{
   overflow: hidden;
 }
 .box:hover {
-  background-color: #fff;
+  background-color: #444;
   animation: pulse 5s ease-in infinite;
 }
 .box:active {
-  background-color: black;
+  background-color: #fff;
   -webkit-filter: contrast(50) invert(1);
   animation: none;
 }
@@ -280,32 +281,32 @@ hr{
 }
 @keyframes color {
   14.28571% {
-    /*background-color: #0000ff;*/
-    background-color: #222;
+    background-color: blue;
+    /*background-color: #222;*/
   }
   28.57143% {
-    /*background-color: #ff0066;*/
-    background-color: #f00;
+    background-color: #ff0066;
+    /*background-color: #fff;*/
   }
   42.85714% {
     /*background-color: #0000ff;*/
-    background-color: #222;
+    /*background-color: #222;*/
   }
   57.14286% {
     /*background-color: #ff0066;*/
-    background-color: #f00;
+    /*background-color: #fff;*/
   }
   71.42857% {
-    /*background-color: #0000ff;*/
-    background-color: #222;
+    background-color: #0000ff;
+    /*background-color: #222;*/
   }
   85.71429% {
     /*background-color: #ff0066;*/
-    background-color: #f00;
+    /*background-color: #fff;*/
   }
   100% {
     /*background-color: #0000ff;*/
-    background-color: #222;
+    background-color: rgb(255, 60, 0);
   }
 }
 .one, .two {
