@@ -223,7 +223,10 @@ hr{
 .image.center{
   margin: 0 auto;
 }
-
+.image.screen{
+  box-shadow: -50px 120px 100px rgba(0,0,0,0.3);
+  margin: 10% auto;
+}
 
 
 @keyframes pulse {
