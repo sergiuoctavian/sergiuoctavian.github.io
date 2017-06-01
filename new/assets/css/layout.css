@@ -10,6 +10,11 @@ html,body{
   margin: 0;
   padding: 0;
 }
+
+.detail{
+  background: #f9f9f9;
+}
+
 .circle{
   position: fixed;
   left: 0;
@@ -337,7 +342,6 @@ hr{
   top: -75%;
   animation: swayx 3s ease-in-out infinite, swayy 3.3s ease-in-out infinite, color 16s linear infinite alternate-reverse;
 }
-
 
 
 @media (max-width: 767px) {
