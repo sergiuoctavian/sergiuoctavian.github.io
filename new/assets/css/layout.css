@@ -39,10 +39,15 @@ html,body{
 }
 .circle-small{
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 60px;
-  height: 60px;
+  /*right: 20px;
+  bottom: 20px;*/
+  top: 30px;
+  left:0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background: transparent;
   border: 25px solid #222;
@@ -51,7 +56,7 @@ html,body{
   /*text-indent: -19999px;*/
   color: transparent;
   text-align: center;
-  line-height: 60px;
+  line-height: 30px;
   /*box-shadow: -100px 50px 150px rgba(0,0,0,0.4);*/
 
   transition: all ease 0.5s;
@@ -95,6 +100,7 @@ html,body{
   padding: 0;
   position: relative;
   display: block;
+  background: #fff;
 }
 .v-segment-wide.dark{
   background: #000;
@@ -343,6 +349,43 @@ hr{
   animation: swayx 3s ease-in-out infinite, swayy 3.3s ease-in-out infinite, color 16s linear infinite alternate-reverse;
 }
 
+/*parallax*/
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+.parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
+.parallax__layer--fore{
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
 
 @media (max-width: 767px) {
   .boxx{
@@ -362,6 +405,14 @@ hr{
     height: 150px;
     border: 29px solid #222;
     top: -40vh;
+  }
+  .circle-small{
+    top: auto;
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .v-segment{
     width: auto;
