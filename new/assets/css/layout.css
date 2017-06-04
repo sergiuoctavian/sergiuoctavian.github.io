@@ -102,8 +102,8 @@ html,body{
   display: block;
   background: #fff;
 }
-.v-segment-wide.dark{
-  background: #000;
+.dark{
+  background: rgba(19,19,19,1);
   color: #fff;
 }
 .v-content{
@@ -235,8 +235,10 @@ hr{
   margin: 0 auto;
 }
 .image.screen{
-  box-shadow: -50px 120px 100px rgba(0,0,0,0.3);
-  margin: 10% auto;
+  /*box-shadow: -50px 120px 100px rgba(0,0,0,0.3);*/
+  margin: 5% auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 
@@ -359,7 +361,8 @@ hr{
 }
 .parallax__group {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   transform-style: preserve-3d;
 }
 .parallax__layer {
@@ -373,9 +376,6 @@ hr{
   transform: translateZ(0);
 }
 .parallax__layer--back {
-  transform: translateZ(-1px);
-}
-.parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
 .parallax__layer--deep {
@@ -385,7 +385,16 @@ hr{
   transform: translateZ(90px) scale(.7);
   z-index: 1;
 }
+/*.parallax__layer--back.gigel{
+  height: 200vh;
+}*/
 
+.parallax {
+  perspective-origin-x: 100%;
+}
+.parallax__layer {
+  transform-origin-x: 100%;
+}
 
 @media (max-width: 767px) {
   .boxx{
