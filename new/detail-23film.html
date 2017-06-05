@@ -169,5 +169,13 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      // auto go to next project
+      $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == getDocHeight()) {
+          window.location = 'detail-arabelasim.html'
+        }
+      });
+    </script>
   </body>
 </html>
