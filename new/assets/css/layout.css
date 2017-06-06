@@ -15,7 +15,7 @@ html,body{
   background: #f9f9f9;
 }
 
-.circle{
+/*.circle{
   position: fixed;
   left: 0;
   right: 0;
@@ -28,15 +28,15 @@ html,body{
   width: 45vh;
   height: 45vh;
   border-radius: 50%;
-  /*background: #222;*/
+  background: #222;
   border: 69px solid #222;
   z-index: 99;
   opacity: 1;
-  /*box-shadow: -100px 50px 150px rgba(0,0,0,0.4);*/
+  box-shadow: -100px 50px 150px rgba(0,0,0,0.4);
 
   transition: all ease 2s;
   -webkit-transition: all ease 2s;
-}
+}*/
 .circle-small{
   position: fixed;
   right: 20px;
@@ -193,7 +193,7 @@ html,body{
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 300; 
+  font-weight: 900; 
 }
 .v-btn-2{
   color: #fff;
@@ -395,12 +395,6 @@ hr{
   overflow-y: auto;
   perspective-origin-x: 100%;
 }
-/*.parallax__group {
-  position: relative;
-  height: 100%;
-  min-height: 100vh;
-  transform-style: preserve-3d;
-}*/
 .v-segment-wide{
   height: 100%;
   width: 100%;
@@ -411,15 +405,6 @@ hr{
   display: block;
   transform-style: preserve-3d;
 }
-.p__layer {
-  position: absolute;
-  /*top: 0;*/
-  right: 0;
-  left: 0;
-  /*bottom: 0;*/
-  /*transform-origin-x: 100%;*/
-}
-
 .p__layer--base {
   position: absolute;
   top: 0;
@@ -463,6 +448,164 @@ hr{
   /*background: rgba(25, 25, 255, 0.7); */
 }
 
+/*circle animation*/
+.circles,
+.circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+.circles {
+  -webkit-animation: 6s ease-in-out infinite circles;
+          animation: 6s ease-in-out infinite circles;
+}
+
+@-webkit-keyframes circles {
+  0%, 10% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  90%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circles {
+  0%, 10% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  90%, 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.circle {
+  border-radius: 50%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  cursor: pointer;
+}
+.circle--1, .circle--2, .circle--3 {
+  background-image: -webkit-linear-gradient(left, #000, #222);
+  background-image: linear-gradient(90deg, #000, #222);
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.circle--4 {
+  background-color: #fff;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.circle--1 {
+  width: 50vmin;
+  height: 50vmin;
+  -webkit-animation-name: circle--1;
+          animation-name: circle--1;
+}
+
+.circle--2 {
+  width: 50vmin;
+  height: 50vmin;
+  -webkit-animation-name: circle--2;
+          animation-name: circle--2;
+}
+
+.circle--3 {
+  width: 25vmin;
+  height: 25vmin;
+  -webkit-animation-name: circle--3;
+          animation-name: circle--3;
+}
+
+.circle--4 {
+  width: 25vmin;
+  height: 25vmin;
+  -webkit-animation-name: circle--4;
+          animation-name: circle--4;
+}
+
+@-webkit-keyframes circle--1 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes circle--1 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+@-webkit-keyframes circle--2 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(180deg);
+            transform: translate(-50%, -50%) scale(1) rotate(180deg);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+            transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+  }
+}
+@keyframes circle--2 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(180deg);
+            transform: translate(-50%, -50%) scale(1) rotate(180deg);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+            transform: translate(-50%, -50%) scale(1.5) rotate(180deg);
+  }
+}
+@-webkit-keyframes circle--3 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
+  }
+}
+@keyframes circle--3 {
+  0%, 10% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  90%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(2);
+            transform: translate(-50%, -50%) scale(2);
+  }
+}
+@-webkit-keyframes circle--4 {
+  0%, 20% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
 @media (max-width: 767px) {
   .boxx{
     top: 20vh;
@@ -476,12 +619,12 @@ hr{
      width: 30vw;
     height: 30vw;
   }
-  .circle{
+/*  .circle{
     width: 150px;
     height: 150px;
     border: 29px solid #222;
     top: -40vh;
-  }
+  }*/
   .circle-small{
     top: auto;
     bottom: 20px;
