@@ -305,8 +305,8 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     border: 0px solid #222;
   }
   .circle.p3{
-    background: #000 url('../img/bg3.jpg') ;
-    background-size: cover;
+    background: #000 url('../img/dribbble.gif') center center ;
+    background-size: 200%;
     border: 0px solid #222;
   }
   .circle.p4{
