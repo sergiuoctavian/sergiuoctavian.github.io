@@ -51,12 +51,25 @@ body, .onepage-wrapper, html {
   right: 0px;
   top: 49vh;
   left: 8%;
-max-width: 400px;
+max-width: 150px;
   z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
+.onepage-pagination:after{
+  position: absolute;
+  content: "scroll";
+  /*height: 22px;*/
+  /*background-color: red;*/
+  /*width: 60%;*/
+  margin-left: 25px;
+  top: 35%;
+  color: #ccc;
+  font-weight: bold;
+}
+
 .onepage-pagination li {
   opacity: 0;
   padding: 0;
