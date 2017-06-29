@@ -695,8 +695,23 @@ hr{
 }
 
 /*circle animation*/
-
+.dots{
+  font-size: 3.3rem; 
+  line-height:0.5; 
+  font-family: Open-Sans; 
+  font-weight: bold; 
+  opacity: 0.1; 
+  width: 20vw; 
+  height: 20vh; 
+  overflow: hidden; 
+  position: fixed; 
+  top: 34vh; 
+  right: 8%;
+}
 @media (max-width: 767px) {
+  body{
+    overflow: hidden;
+  }
   .active .circle.start{
     width: 50vh;
     height: 50vh;
@@ -714,6 +729,12 @@ hr{
   }
   .v-project-link{
     right: 25%;
+  }
+  .dots{
+    width: 100vh;
+    right: 0;
+    height: 25vh;
+    top: 30vh;
   }
 
   .circle-small{
