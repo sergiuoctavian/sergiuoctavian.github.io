@@ -697,12 +697,25 @@ hr{
 /*circle animation*/
 
 @media (max-width: 767px) {
-/*  .circle{
-    width: 150px;
-    height: 150px;
-    border: 29px solid #222;
-    top: -40vh;
-  }*/
+  .active .circle.start{
+    width: 50vh;
+    height: 50vh;
+    /*border: 29px solid #222;*/
+    /*top: -40vh;*/
+  }
+  .onepage-pagination{
+    right:0;
+    left: 0;
+    margin: auto;
+    top: 80vh;
+  }
+  .onepage-pagination:after{
+    content: "select";
+  }
+  .v-project-link{
+    right: 25%;
+  }
+
   .circle-small{
     top: auto;
     bottom: 20px;
