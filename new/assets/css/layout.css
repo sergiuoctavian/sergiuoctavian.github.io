@@ -502,6 +502,9 @@ top: 65%;
   line-height:1;
   letter-spacing: -20px;
 }
+.v-project-link .v-project-title{
+  margin: 1% -40%;
+}
 .v-project-description{
   text-align: right;
   font-size: 12px;
