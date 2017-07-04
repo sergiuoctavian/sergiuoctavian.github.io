@@ -655,7 +655,11 @@ hr{
 .background.zoom {
     transform: scale(2);
 }*/
-
+a.text-link{
+  color: #fff;
+  text-decoration: underline;
+  font: italic;
+}
 /*parallax*/
 
 .parallax {
