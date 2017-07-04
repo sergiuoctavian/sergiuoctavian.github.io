@@ -18,7 +18,7 @@ h2{
 }
 
 p{
-  font-size: 23px;
+  font-size: 1.2vw;
   font-weight: 400;
 }
 /***********************/
@@ -498,12 +498,9 @@ top: 65%;
 }
 
 .v-project-title{
-  text-align: right;
-  text-decoration: none;
-  font-size: 4vw;
-  font-weight: 300;
-  /*color: #ccc;*/
-  margin: 0;
+  font-size: 21vw; 
+  line-height:1;
+  letter-spacing: -20px;
 }
 .v-project-description{
   text-align: right;
@@ -617,6 +614,7 @@ hr{
   width: 100%;
   max-width: 1000px;
   box-shadow: -50px 120px 100px rgba(0,0,0,0.2);
+  margin: 150px auto;
 }
 .background{
   display: inline-block;
@@ -728,9 +726,7 @@ hr{
 }
 
 @media (max-width: 767px) {
-  body{
-    overflow: hidden;
-  }
+
   .active .circle.start{
     width: 40vh;
     height: 40vh;
@@ -773,8 +769,12 @@ hr{
     display: none;
   }
   .v-project-title{
-    font-size: 10vw;
-    text-align: right;
+    font-size: 18vw; 
+    line-height:1;
+    letter-spacing: -3px;
+  }
+  p{
+    font-size: 5vw;
   }
   .projects{
     margin-top: 55vh; 
