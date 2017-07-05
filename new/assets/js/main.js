@@ -1,3 +1,7 @@
+function goBack() {
+    window.history.back();
+}
+
 // $(function(){
 //   'use strict';
 //   var $page = $('#main'),
@@ -43,7 +47,7 @@ $(document).ready(function() {
                                         // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
         animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
         pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-        updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+        updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
         beforeMove: function(index) {$('.circle').removeClass('1selected'); $('.circle').addClass('1unselected'); },  // This option accepts a callback function. The function will be called before the page moves.
         afterMove: function(index) { $('.circle').addClass('1selected'); $('.circle').removeClass('1unselected');},   // This option accepts a callback function. The function will be called after the page moves.
         loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.

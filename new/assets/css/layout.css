@@ -661,7 +661,7 @@ h1.alert{
   max-width: 1000px;
   box-shadow: -50px 120px 100px rgba(0,0,0,0.2);
   margin: 150px auto;
-  cursor: crosshair;
+  cursor: url('../img/fullrez.png'), auto; 
 }
 .image.screen:hover{
   transform: scale(1.2);
