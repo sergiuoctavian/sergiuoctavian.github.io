@@ -1,7 +1,3 @@
-function goBack() {
-    window.history.back();
-}
-
 // $(function(){
 //   'use strict';
 //   var $page = $('#main'),
@@ -82,6 +78,10 @@ $(document).ready(function() {
       $('.p5 .v-project-link').hover(
           function(){ $('.circle').addClass('p5'); $('body').addClass('dark'); },
           function(){ $('.circle').removeClass('p5'); $('body').removeClass('dark'); }
+      )
+      $('.p6 .v-project-link').hover(
+          function(){ $('.circle').addClass('p6'); $('body').addClass('dark'); },
+          function(){ $('.circle').removeClass('p6'); $('body').removeClass('dark'); }
       )
     }
 

@@ -317,12 +317,17 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     border: 0px solid #222;
   }
   .circle.p3{
-    background: #000 url('../img/dribbble.gif') center center ;
+    background: #000 url('../img/verkla/h-verkla.jpg') center center ;
     background-size: 200%;
     border: 0px solid #222;
   }
   .circle.p4{
-    background: #000 url('../img/bg4.jpg') ;
+    background: #000 url('../img/sportmix.jpg') ;
+    background-size: cover;
+    border: 0px solid #222;
+  }
+  .circle.p5{
+    background: #000 url('../img/city365.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
