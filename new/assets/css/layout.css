@@ -428,6 +428,19 @@ top: 65%;
   position: fixed;
   z-index: 1;
 }
+.v-fullrez-layout .v-header{
+  width: auto;
+  left:0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  padding: 40px;
+}
+
+.v-header.fullrez{
+  display: none;
+}
+
 .v-segment{
   width: 20vw;
   margin: 45vh 0%;
@@ -603,6 +616,18 @@ hr{
   background: #222;
   border: 1px solid #222;
 }
+h1.alert{
+  font-weight: bold;
+  font-size: 10vw;
+  color: #fff;
+  width: 100%;
+  left:0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+  top: 30vh;
+  text-align: center;
+}
 .image{
   max-width: 100%;
   display: block;
@@ -618,6 +643,19 @@ hr{
   position: relative;
   display: block;
 }
+
+.v-fullrez-layout .image{
+  margin: 8% auto;
+  width: 90%;
+  cursor: zoom-in;
+}
+.image.fullrez{
+  cursor: zoom-out;
+  max-width: initial;
+  width: auto;
+  margin: 0 auto;
+}
+
 .image.screen{
   width: 100%;
   max-width: 1000px;
