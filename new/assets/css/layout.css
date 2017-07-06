@@ -788,6 +788,10 @@ a.text-link{
 
 @media (max-width: 767px) {
 
+  .v-header{
+    top:0;
+  }
+
   .active .circle.start{
     width: 40vh;
     height: 40vh;
@@ -803,14 +807,13 @@ a.text-link{
   .onepage-pagination:after{
     content: "select";
   }
-  .v-project-link{
-    right: 25%;
-  }
+
   .dots{
     width: 100vh;
     right: 0;
     height: 25vh;
     top: 30vh;
+    display: none;
   }
 
   .circle-small{
@@ -826,13 +829,14 @@ a.text-link{
     margin: 30px;
     text-align: center;
   }
-  .description{
+  .v-project-description{
     display: none;
   }
-  .v-project-title{
-    font-size: 18vw; 
+  .v-project-link .v-project-title{
+    font-size: 23vw; 
     line-height:1;
     letter-spacing: -3px;
+    margin: 33% -15%;
   }
   p{
     font-size: 5vw;
