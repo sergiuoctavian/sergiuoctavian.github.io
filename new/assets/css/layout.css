@@ -307,12 +307,12 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     /*height: 75vh;*/
   }
   .circle.p1{
-    background: #000 url('../img/h-arabelasim2.jpg') ;
+    background: #000 url('../img/arabelasim/h-arabelasim.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
   .circle.p2{
-    background: #000 url('../img/j.jpg') ;
+    background: #000 url('../img/23film/h-23film.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
@@ -322,7 +322,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     border: 0px solid #222;
   }
   .circle.p4{
-    background: #000 url('../img/sportmix.jpg') ;
+    background: #000 url('../img/sportmix/h-sportmix.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
