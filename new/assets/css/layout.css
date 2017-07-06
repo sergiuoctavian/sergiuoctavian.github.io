@@ -785,6 +785,9 @@ a.text-link{
   top: 34vh;
   right: 76%;
 }
+.v-next-project{
+  text-align: center; font-size: 7vw; 
+}
 
 @media (max-width: 767px) {
 
@@ -836,6 +839,20 @@ a.text-link{
     line-height:1;
     letter-spacing: -3px;
     margin: 23% -15%;
+  }
+  .v-project-title{
+    font-size: 25vw;
+    letter-spacing: -3px;
+    margin-top: 0; 
+  }
+  .v-year{
+    margin: 30% auto 0;
+  }
+  h2{
+    letter-spacing: -1px;
+  }
+  .v-next-project{
+    font-size: 16vw;
   }
   p{
     font-size: 5vw;
