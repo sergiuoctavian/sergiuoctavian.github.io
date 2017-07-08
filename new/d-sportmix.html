@@ -76,14 +76,14 @@
                             </p>
                         </div>
                         <div class="v-col-2"> 
-                          <p style="text-align: right;">font: Open Sans</p>
+                          <p style="text-align: right;">font: Helvetica</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="v-segment-wide light">
                     <div class="v-content">  
-                        <img class="image center" src="assets/img/arabelasim/grid.jpg"/>
+                        <img class="image center" src="assets/img/sportmix/grid.jpg"/>
                         <h3 style="text-align: center;">the grid</h3>
                     </div>
                 </div>
@@ -164,9 +164,9 @@
                     </div>
                 </div>
 
-                <div class="v-segment-wide dark" style="height:50vh; overflow: hidden; background: url('assets/img/city365.jpg') center center; background-size: cover; background-position: fixed;">
+                <div class="v-segment-wide dark" style="height:50vh; overflow: hidden; background: url('assets/img/city365/h-city365.jpg') center center; background-size: cover; background-position: fixed;">
                     <div class="v-content">
-                        <h2 class="v-next-project"><a style="color: #fff" href="d-notyet.html">Whanna see another?</a></h2>
+                        <h2 class="v-next-project"><a style="color: #fff" href="d-city365.html">Whanna see another?</a></h2>
                     </div>
                 </div>
 
@@ -181,5 +181,13 @@
     <!-- <script src="assets/js/jquery.smoothState.min.js"></script> -->
     <!-- <script src="assets/js/onepage-scroll.js"></script> -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      // auto go to next project
+      $(window).scroll(function() {
+        if($(window).scrollTop() + $(window).height() == getDocHeight()) {
+          window.location = 'd-city365.html'
+        }
+      });
+    </script>
   </body>
 </html>
