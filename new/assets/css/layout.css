@@ -16,7 +16,11 @@ h2{
   font-weight: 900;
   letter-spacing: -2px;
 }
-
+h3{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #323232
+}
 p{
   font-size: 1.2vw;
   font-weight: 400;
@@ -469,6 +473,10 @@ top: 65%;
   color: rgba(19,19,19,1);
 }
 .v-content{
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+
   padding: 6%;
   /*float: left;*/
   /*width: 100%;*/
@@ -615,7 +623,7 @@ a:hover{
   opacity: 0.5;
 }
 p{
-  text-align: justify;
+  /*text-align: justify;*/
 }
 hr{
   background: #222;
@@ -654,7 +662,9 @@ h1.alert{
   width: 90%;
   cursor: zoom-in;
 }
-.image.fullrez{
+.image.fullrez{                        <h4 class="v-year">2016</h4>
+                        <p class="v-taskv">Design & Development</br>
+                        <a href="http://demo.arabelasim.ro" target="_blank">visit website</a></p>
   cursor: zoom-out;
   max-width: initial;
   width: auto;
@@ -665,7 +675,7 @@ h1.alert{
   width: 100%;
   max-width: 1000px;
   box-shadow: -50px 120px 100px rgba(0,0,0,0.2);
-  margin: 150px auto;
+  margin: 50px auto;
   cursor: url('../img/fullrez.png'), auto; 
 }
 .image.screen:hover{
@@ -787,6 +797,11 @@ a.text-link{
 }
 .v-next-project{
   text-align: center; font-size: 7vw; 
+}
+.v-project-header{
+  position: absolute;
+  float:left;
+  margin: 4% 8%;
 }
 
 @media (max-width: 767px) {
