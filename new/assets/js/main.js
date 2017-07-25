@@ -7,6 +7,8 @@ function sleek(){
     arrows: false
   });
 
+
+
   //adding scroll behaviour
   $('.slider').mousewheel(function(e) {
     if (e.deltaY < 0) {
@@ -26,6 +28,7 @@ function sleek(){
     }
   });
 }
+
 
 // init carousel
 $(document).on('ready', function() {
@@ -63,7 +66,7 @@ $(function() {
                 }
             },
             onAfter: function($container, $newContent) {
-              //reinit carousel
+              //reinit
               sleek();
             }
         },
