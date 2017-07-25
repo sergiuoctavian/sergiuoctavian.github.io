@@ -1,49 +1,36 @@
 
 function sleek(){
+  //slick carousel settings
+  $(".slider").slick({
+    dots: true,
+    infinite: true,
+    arrows: false
+  });
 
+  //adding scroll behaviour
+  $('.slider').mousewheel(function(e) {
+    if (e.deltaY < 0) {
+      if($(this).slick('slickCurrentSlide') == $(this).find('.slide').length - 1) {
+        return
+      }
 
-
-$(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-      });
-
-
-// $('.center').mousewheel(function(e) {
-//   if (e.deltaY < 0) {
-//     if($(this).slick('slickCurrentSlide') == $(this).find('.slide').length - 1) {
-//       return
-//     }
-
-//     e.preventDefault()
-//     $(this).slick('slickNext')
-//   } else {
-//     if($(this).slick('slickCurrentSlide') == 0) {
-//       return
-//     }
-    
-//     e.preventDefault()
-//     $(this).slick('slickPrev')
-//   }
-// });
-
-
-
-
-     
+      e.preventDefault()
+      $(this).slick('slickNext')
+    } else {
+      if($(this).slick('slickCurrentSlide') == 0) {
+        return
+      }
       
-     
-   
-
+      e.preventDefault()
+      $(this).slick('slickPrev')
+    }
+  });
 }
 
+// init carousel
 $(document).on('ready', function() {
   sleek();
-   });
+});
 
 $(function() {
     "use strict";
@@ -76,6 +63,7 @@ $(function() {
                 }
             },
             onAfter: function($container, $newContent) {
+              //reinit carousel
               sleek();
             }
         },
