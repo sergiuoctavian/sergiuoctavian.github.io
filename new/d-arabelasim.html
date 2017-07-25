@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="assets/css/keyframes.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/pageTransitions.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
   <body>
     <div class="index v-scene" id="main">
-      <div class="v-landing-layout slider">
-        <div class="v-page scene_element scene_element--fadeinleft">  
-                <section>
+      <div class="v-landing-layout">
+        <div class="v-page scene_element scene_element--fadeinup">  
+                
             <div class="v-header">
                 <p style="text-align: right; font-weight: bold; line-height: 1.5;">
                     <a class="red scene_element scene_element--fadein" href="./readme.html">hire me</a></br>
                     <a class="active-tab scene_element scene_element--fadein" href="#">arabelasim</a>
-                    <a href="index.html#1" class="circle-small scene_element scene_element--fadeinup">✖</a>
+                    <a href="index.html" class="circle-small scene_element scene_element--fadeinup">✖</a>
                 </p>
             </div>
 
@@ -207,9 +209,17 @@
                 </div>
 
             </div> <!--.main -->
-           </section>
-            <script src="assets/js/onepage-scroll.js"></script>
+         
+       
+        </div> <!-- page -->
+       
+      </div> <!-- landing-layout -->
+    </div><!-- main-->
+    <!-- Scripts -->
+    <script src="assets/js/jquery.smoothState.min.js"></script>
+    <script src="assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/main.js"></script>
+
     <script type="text/javascript">
       // auto go to next project
       $(window).scroll(function() {
@@ -218,13 +228,5 @@
         }
       });
     </script>
-        </div> <!-- page -->
-       
-      </div> <!-- landing-layout -->
-    </div><!-- main-->
-    <!-- Scripts -->
-
-    <script src="assets/js/jquery.smoothState.min.js"></script>
-   
   </body>
 </html>

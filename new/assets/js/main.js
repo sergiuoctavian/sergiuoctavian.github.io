@@ -1,40 +1,66 @@
+
+function sleek(){
+
+
+
+$(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      });
+
+
+// $('.center').mousewheel(function(e) {
+//   if (e.deltaY < 0) {
+//     if($(this).slick('slickCurrentSlide') == $(this).find('.slide').length - 1) {
+//       return
+//     }
+
+//     e.preventDefault()
+//     $(this).slick('slickNext')
+//   } else {
+//     if($(this).slick('slickCurrentSlide') == 0) {
+//       return
+//     }
     
-function slider() {
-    //carousel
-    $(".slider").onepage_scroll({
-      sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-      easing: "cubic-bezier(0,.53,.57,.96)",  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-                                      // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-      animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-      pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-      updateURL: true,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-      beforeMove: function(index) {$('.circle').removeClass('1selected'); $('.circle').addClass('1unselected'); },  // This option accepts a callback function. The function will be called before the page moves.
-      afterMove: function(index) { $('.circle').addClass('1selected'); $('.circle').removeClass('1unselected');},   // This option accepts a callback function. The function will be called after the page moves.
-      loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-      keyboard: true,                  // You can activate the keyboard controls
-      responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-                                      // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                      // the browser's width is less than 600, the fallback will kick in.
-      direction: "horizontal"         // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
-    });
+//     e.preventDefault()
+//     $(this).slick('slickPrev')
+//   }
+// });
+
+
+
+
+     
+      
+     
+   
 
 }
 
+$(document).on('ready', function() {
+  sleek();
+   });
 
 $(function() {
     "use strict";
     var options = {
             debug: true,
-            prefetch: true,
+            prefetch: false,
             cacheLength: 0,
+            forms: '#gigi',
+            allowFormCaching: false,
             blacklist: '.no-smoothState',
             onStart: {
                 duration: 250, // Duration of our animation 
                 render: function($container) {
                     // Add your CSS animation reversing class 
-                    
-                    $container.addClass("is-exiting");
 
+                    $container.addClass("is-exiting");
+                    
                     // Restart your animation 
                     smoothState.restartCSSAnimations();
                 }
@@ -50,7 +76,7 @@ $(function() {
                 }
             },
             onAfter: function($container, $newContent) {
-                  slider();
+              sleek();
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
