@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="assets/css/keyframes.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/pageTransitions.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
   <body>
     <div class="index v-scene" id="main">
-      <div class="v-landing-layout">
-        <div class="v-page">  
+      <div class="v-landing-layout slider">
+        <div class="v-page scene_element scene_element--fadeinleft">  
+                <section>
             <div class="v-header">
                 <p style="text-align: right; font-weight: bold; line-height: 1.5;">
                     <a class="red scene_element scene_element--fadein" href="./readme.html">hire me</a></br>
@@ -66,7 +68,7 @@
                     </div>
                 </div>
                 <div class="v-segment-wide">
-                        <img class="image center scene_element scene_element--fadein" src="assets/img/arabelasim/h-arabelasim2.jpg" />
+                    <img class="image center scene_element scene_element--fadein" src="assets/img/arabelasim/h-arabelasim2.jpg" />
                 </div>
                 <div class="v-segment-wide dark">
                     <div class="v-content">
@@ -93,35 +95,22 @@
                         <div class="v-col-1">  
                             <img class="image center" src="assets/img/arabelasim/grid.jpg"/>
                         </div>
-                        <!-- <div class="v-col-1">  
-                            <h3 style="text-align: center;">bootstrap 3 grid system</h3>
-                        </div> -->
                     </div>
                 </div>
 
                 <div class="v-segment-wide dark">
-                    
                     <div class="v-content">
-                        <div class="v-col-1"> 
+                        <div class="v-col-2"> 
                             <a href="./arabelasim/01.html" target="_blank">
                                 <img class="image center screen" src="assets/img/arabelasim/01.jpg"/>
                             </a>
-                        </div>
-                        <div class="v-col-1">
                             <h2 style="text-align: center;">home</h2>
                         </div>
-                    </div>
-                </div>
-
-                <div class="v-segment-wide light">
-                    <div class="v-content">
                         
-                        <div class="v-col-1"> 
+                        <div class="v-col-2"> 
                             <a href="./arabelasim/03.html" target="_blank">
                                 <img class="image center screen" src="assets/img/arabelasim/animation.gif"/>
                             </a>
-                        </div>
-                        <div class="v-col-1">
                             <h2 style="text-align: center;">menu / collections</h2>
                         </div>
                     </div>
@@ -218,15 +207,8 @@
                 </div>
 
             </div> <!--.main -->
-           
-        </div> <!-- page -->
-       
-      </div> <!-- landing-layout -->
-    </div><!-- main-->
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <!-- <script src="assets/js/jquery.smoothState.min.js"></script> -->
-    <!-- <script src="assets/js/onepage-scroll.js"></script> -->
+           </section>
+            <script src="assets/js/onepage-scroll.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
       // auto go to next project
@@ -236,5 +218,13 @@
         }
       });
     </script>
+        </div> <!-- page -->
+       
+      </div> <!-- landing-layout -->
+    </div><!-- main-->
+    <!-- Scripts -->
+
+    <script src="assets/js/jquery.smoothState.min.js"></script>
+   
   </body>
 </html>

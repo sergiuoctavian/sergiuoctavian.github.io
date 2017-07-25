@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/keyframes.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/pageTransitions.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
   <body>
     <div class="index v-scene" id="main">
@@ -24,7 +25,7 @@
                 </p>
             </div>
 
-            <div class="slider">
+            <div class="slider no-smoothstate">
                 <section>
                     <div class="access p1">
                         <div class="circle scene_element scene_element--fadein">
@@ -99,14 +100,51 @@
 
             </div> <!--.main -->
            <p class="dots">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+           <script src="assets/js/onepage-scroll.js"></script>
+           <script src="assets/js/main.js"></script>
+           <script type="text/javascript">
+               $(document).ready(function() {
+                    slider();
+
+                    //pagination animation
+                    $('.onepage-pagination').addClass('start');
+                    $('.circle').addClass('start');
+
+                    //circle animations
+                    $('.p1 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p1'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p1'); $('body').removeClass('dark'); }
+                    )
+                    $('.p2 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p2'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p2'); $('body').removeClass('dark'); }
+                    )
+                    $('.p3 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p3'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p3'); $('body').removeClass('dark'); }
+                    )
+                    $('.p4 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p4'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p4'); $('body').removeClass('dark'); }
+                    )
+                    $('.p5 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p5'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p5'); $('body').removeClass('dark'); }
+                    )
+                    $('.p6 .v-project-link').hover(
+                        function(){ $('.circle').addClass('p6'); $('body').addClass('dark'); },
+                        function(){ $('.circle').removeClass('p6'); $('body').removeClass('dark'); }
+                    )
+                });
+           </script>
         </div> <!-- page -->
        
       </div> <!-- landing-layout -->
     </div><!-- main-->
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <!-- <script src="assets/js/jquery.smoothState.min.js"></script> -->
-    <script src="assets/js/onepage-scroll.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script> -->
+    <script src="assets/js/jquery.smoothState.min.js"></script>
+    
+    
   </body>
 </html>

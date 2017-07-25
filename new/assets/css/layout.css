@@ -662,9 +662,7 @@ h1.alert{
   width: 90%;
   cursor: zoom-in;
 }
-.image.fullrez{                        <h4 class="v-year">2016</h4>
-                        <p class="v-taskv">Design & Development</br>
-                        <a href="http://demo.arabelasim.ro" target="_blank">visit website</a></p>
+.image.fullrez{                     
   cursor: zoom-out;
   max-width: initial;
   width: auto;
@@ -681,6 +679,7 @@ h1.alert{
 .image.screen:hover{
   transform: scale(1.2);
   box-shadow: 0px 120px 100px rgba(0,0,0,0.2);
+  z-index: 9999;
 }
 
 .background{
