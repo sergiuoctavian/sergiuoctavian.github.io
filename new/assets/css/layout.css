@@ -846,17 +846,18 @@ a.text-link{
     top:0;
   }
 
-  .active .circle.start{
+  .slick-active .circle.start{
     width: 40vh;
     height: 40vh;
     /*border: 29px solid #222;*/
     /*top: -40vh;*/
   }
-  .onepage-pagination{
-    right:0;
+  .slick-dots{
+    display: none!important;
+/*    right:0;
     left: 0;
     margin: auto;
-    top: 78vh;
+    top: 78vh;*/
   }
   .onepage-pagination:after{
     content: "select";
@@ -889,7 +890,7 @@ a.text-link{
     font-size: 23vw; 
     line-height:1;
     letter-spacing: -3px;
-    margin: 23% -15%;
+    margin: 13% 15%;
   }
   .v-project-title{
     font-size: 25vw;
