@@ -264,6 +264,13 @@ max-width: 150px;
 }
 
 
+.v-header p a:hover{
+  font-size: 6vw;
+  background: black;
+  color:red;
+}
+
+
   .circle{
   /*  position: fixed;
     left: 0;
@@ -442,7 +449,7 @@ top: 65%;
   color: transparent;
   text-align: center;
   line-height: 100px;
-  /*box-shadow: -100px 50px 150px rgba(0,0,0,0.4);*/
+  box-shadow: -100px 50px 150px rgba(255,255,255,0.4);
 
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
@@ -872,6 +879,7 @@ a.text-link{
     height: 25vh;
     top: 30vh;
     /*display: none;*/
+    z-index: 1;
   }
 
   .circle-small{
