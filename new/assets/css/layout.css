@@ -842,6 +842,10 @@ a.text-link{
 
 @media (max-width: 767px) {
 
+  .v-content{
+    display: initial;
+  }
+
   .v-header{
     top:0;
   }
@@ -867,7 +871,7 @@ a.text-link{
     right: 0;
     height: 25vh;
     top: 30vh;
-    display: none;
+    /*display: none;*/
   }
 
   .circle-small{
