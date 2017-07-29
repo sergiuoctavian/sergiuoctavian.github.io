@@ -5,34 +5,57 @@ function sleek(){
     dots: true,
     infinite: true,
     arrows: false
-  });
+  })
+ //adding scroll behaviour
+.mousewheel(function(e) {
+     e.preventDefault();
 
-
-
-  //adding scroll behaviour
-  $('.slider').mousewheel(function(e) {
     if (e.deltaY < 0) {
-      if($(this).slick('slickCurrentSlide') == $(this).find('.slide').length - 1) {
-        return
-      }
-
-      e.preventDefault()
-      $(this).slick('slickNext')
-    } else {
-      if($(this).slick('slickCurrentSlide') == 0) {
-        return
-      }
-      
-      e.preventDefault()
-      $(this).slick('slickPrev')
+      $(this).slick('slickNext');
+    }
+    else {
+      $(this).slick('slickPrev');
     }
   });
+
+}
+
+function redirectSlider(){
+// simulate a "window.location.search" string.
+    var testurl = "?slick1=4";
+
+$(".slider")
+    .slick()
+    .each(function(){
+        
+        //if( window.location.search ) {
+        if( testurl ) {
+            
+            var $slider = $(this),
+                sliderid = $slider.slick("getSlick").instanceUid,
+                //queries = window.location.search.slice(1).split("&"),
+                queries = testurl.slice(1).split("&"),
+                checkQuery;
+                
+                console.log(sliderid);
+            
+            for( query in queries ) {
+                checkQuery = queries[query].split("=");
+                console.log(checkQuery)
+                if( checkQuery[0] === "slick" + ( sliderid + 1 ) ) {
+                    $slider.slick( "slickGoTo", parseInt( checkQuery[1], 10 ) - 1, true );
+                }
+            }
+        }
+
+    });
 }
 
 
 // init carousel
 $(document).on('ready', function() {
   sleek();
+  // redirectSlider();
 });
 
 $(function() {
@@ -68,6 +91,7 @@ $(function() {
             onAfter: function($container, $newContent) {
               //reinit
               sleek();
+              // redirectSlider();
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
@@ -83,3 +107,6 @@ function getDocHeight() {
     D.body.clientHeight, D.documentElement.clientHeight
   );
 }
+
+
+
