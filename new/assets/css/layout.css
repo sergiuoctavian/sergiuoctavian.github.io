@@ -782,6 +782,10 @@ a.text-link{
     top:0;
   }
 
+  .v-project-header{
+    margin: 58% 8%;
+  }
+
   .slick-active .circle.start{
     width: 40vh;
     height: 40vh;
@@ -803,6 +807,7 @@ a.text-link{
     bottom: 0;
     top: auto;
     z-index: 1;
+    opacity: 0.2;
   }
   .dots:after{
     content: 'S W I P E';
@@ -812,9 +817,6 @@ a.text-link{
     right: 0;
     text-align: center;
     font-size: 5vh;
-  }
-  .dots.secondary{
-    background-size: 50%;
   }
 
   .circle-small{
