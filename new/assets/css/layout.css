@@ -595,6 +595,7 @@ h1.alert{
 .image{
   max-width: 100%;
   display: block;
+
 }
 .image.right{
   float: right;
@@ -626,6 +627,9 @@ h1.alert{
   box-shadow: -50px 120px 100px rgba(0,0,0,0.2);
   margin: 50px auto;
   cursor: url('../img/fullrez.png'), auto; 
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  transition: all 400ms;
 }
 .image.screen:hover{
   transform: scale(1.2);
