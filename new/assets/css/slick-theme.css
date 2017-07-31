@@ -189,7 +189,7 @@
     width: 10px;
     height: 10px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .25;
