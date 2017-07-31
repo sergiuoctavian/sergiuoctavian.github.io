@@ -291,7 +291,7 @@ p strong{
     opacity: 0.5;
     border: 20px solid #222;
   }
-  .circle:hover:after{
+  .p1:hover .circle:after, .p2:hover .circle:after, .p3:hover .circle:after, .p4:hover .circle:after, .p5:hover .circle:after, .p6:hover .circle:after {
       opacity: 1;
   }
 
