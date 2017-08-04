@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vibråntmatter - design matters.</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/keyframes.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/pageTransitions.css">
+  </head>
+  <body>
+    <div class="index v-scene" id="main">
+      <div class="v-fullrez-layout">
+        <div class="v-page">  
+            <div class="v-header">
+                <p style="display: inline;"><a href="#"><img style="float:left; opacity: 0.3;" width="150" src="../assets/img/logo-neg.png"/></a><span class="back-to-project" style="cursor:pointer; opacity:0.3;">back to case study </span><strong style="opacity:1;">✖</strong></p>
+            </div>
+
+            <div class="main">
+                <img class="image" src="../assets/img/sportmix/02b.jpg"/>
+            </div> <!--.main -->
+           
+        </div> <!-- page -->
+       
+      </div> <!-- landing-layout -->
+    </div><!-- main-->
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script src="assets/js/jquery.smoothState.min.js"></script> -->
+    <!-- <script src="assets/js/onepage-scroll.js"></script> -->
+    <!-- <script src="../assets/js/main.js"></script> -->
+    <script type="text/javascript">
+         // img zoom
+            $('.image').click(function(){
+                $('.image, .v-header').toggleClass('fullrez');
+            });
+
+          // disable right click
+            $("html").on("contextmenu",function(e){
+
+                var bg = $("body").css('background'); // store original background
+                $("html, body").css('background', '#F00'); //change second element background
+                $("html > div:not('.alert'), body > div:not('.alert')").css('opacity', '0.1');
+                $('<h1 class="alert">It\'s a compliment, <br>but nope! :-P </h1>').appendTo('body'); // fuck off
+                setTimeout(function() {
+                    $("html, body").css('background', bg); // change it back after ...
+                    $("html > div, body > div").css('opacity', '1');
+                    $('.alert').remove();
+                }, 1600); // waiting one second
+
+               return false;
+            }); 
+            // close window
+            $('.back-to-project').click(function(){
+                window.close();
+            });
+    </script>
+  </body>
+</html>

@@ -43,11 +43,13 @@ p strong{
     .slider {
         width: 100%;
         /*margin: 20vh auto;*/
-        cursor: move;
+        /*cursor: move;*/
+        cursor: url('../img/drag.png'), auto; 
     }
     .slick-track{
       height: 100vh;
       /*padding: 100px 0;*/
+      /*cursor: url('../img/drag.png'), auto; */
 
     }
 
@@ -226,7 +228,7 @@ p strong{
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/arabelasim/h-arabelasim2.jpg') ;
+    background: #000 url('../img/h-arabelasim.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
@@ -239,7 +241,7 @@ p strong{
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/23film/h-23film.jpg') ;
+    background: #000 url('../img/h-23film.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
@@ -252,7 +254,7 @@ p strong{
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/verkla/h-verkla.jpg') center center ;
+    background: #000 url('../img/h-verkla.jpg') center center ;
     background-size: 200%;
     border: 0px solid #222;
   }
@@ -265,7 +267,7 @@ p strong{
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/sportmix/h-sportmix.jpg') ;
+    background: #000 url('../img/h-sportmix.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
@@ -278,7 +280,7 @@ p strong{
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/city365/h-city365.jpg') ;
+    background: #000 url('../img/h-city365.jpg') ;
     background-size: cover;
     border: 0px solid #222;
   }
@@ -388,7 +390,7 @@ top: 65%;
   left:0;
   right: 0;
   top: 0;
-  position: absolute;
+  /*position: absolute;*/
   padding: 40px;
 }
 
