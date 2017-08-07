@@ -7,16 +7,16 @@ function sleek(){
     arrows: false
   })
  //adding scroll behaviour
-// .mousewheel(function(e) {
-//      e.preventDefault();
+.mousewheel(function(e) {
+     e.preventDefault();
 
-//     if (e.deltaY < 0) {
-//       $(this).slick('slickNext');
-//     }
-//     else {
-//       $(this).slick('slickPrev');
-//     }
-//   });
+    if (e.deltaY < 0) {
+      $(this).slick('slickNext');
+    }
+    else {
+      $(this).slick('slickPrev');
+    }
+  });
 
 }
 

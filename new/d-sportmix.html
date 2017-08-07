@@ -12,10 +12,15 @@
     <link rel="stylesheet" href="assets/css/keyframes.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/pageTransitions.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   </head>
   <body>
-    <div class="index v-scene" id="main">
-      <div class="v-landing-layout">
+
+    <div class="sportmix v-scene" id="main">
+
+      <div class="v-casestudy-layout">
+
         <div class="v-page">  
             <div class="v-header">
                 <p style="text-align: right; font-weight: bold; line-height: 1.5;">
@@ -25,473 +30,426 @@
                 </p>
             </div>
 
-            <div class="main">
-                <div class="v-segment-wide dark">
-                    <div class="v-project-header">
-                        <h4 class="v-year">2016</h4>
-                        <p class="v-taskv">Design & Development</br>
-                        <a href="http://demo.arabelasim.ro" target="_blank">visit website</a></p>
-                    </div>
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <h1 class="v-project-title">sportmix</h1>
-                            <div class="dots secondary"></div>
-                        </div>
-                    </div>
+            <div class="v-segment-wide light" style="background: url('assets/img/sportmix/h-sportmix.jpg')no-repeat fixed 50%; background-size: cover;">
+                <div class="v-project-header">
+                    <h4 class="v-year">2016</h4>
+                    <p class="v-taskv">Design & Development</br>
+                    <a href="http://demo.arabelasim.ro" target="_blank">visit website</a></p>
                 </div>
+                <div class="v-content gradient">
+                    <div class="v-col-1">
+                        <h1 class="v-project-title">sportmix</h1>
+                        <div class="dots secondary"></div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1"> 
-                            <h2>First things, first. Hit the play button!</h2>
-                            <p>It is prooven that listening to this while checking the project will unlock you a <a class="text-link" href="https://www.ted.com/talks/jinsop_lee_design_for_all_5_senses/transcript?language=en" target="_blnak">deeper depth of experience</a>.</p>
-                            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331419996&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        </div>
+                        <h2>First things, first. Hit the play button!</h2>
+                        <p>It is prooven that listening to this while checking the project will unlock you a <a class="text-link" href="https://www.ted.com/talks/jinsop_lee_design_for_all_5_senses/transcript?language=en" target="_blnak">deeper depth of experience</a>.</p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/331419996&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
                     </div>
                 </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                  
+            </div>
+
+            <div class="v-segment-wide light">
+                <div class="v-content">
+                    <div class="v-col-3"> 
+                        <h2>The starting point</h2>
+                        <p>Sportmix was a startup aiming to help sport amateurs find co-players, sport events and locations from their city. Our vision was to create not only a platform, but a community bringing people together through casual sport. A meet-up for sport lovers.</p>
+                        <p>Role: Founding member, Product Designer</p>
+                        <h3>Product highlights</h3>
+                        <p>Helps people find players, sport locations & events in their current city. Builds a community around sport lovers.</p>
+                    </div>
+                    <div class="v-col-1">
+                        <img class="image center" width="1000" src="assets/img/sportmix/start.jpg"/>
                     </div>
                 </div>
-                <div class="v-segment-wide light">
-                    <div class="v-content">
-                        <div class="v-col-3"> 
-                            <h2>The starting point</h2>
-                            <p>Sportmix was a startup aiming to help sport amateurs find co-players, sport events and locations from their city. Our vision was to create not only a platform, but a community bringing people together through casual sport. A meet-up for sport lovers.</p>
-                            <p>Role: Founding member, Product Designer</p>
-                            <h3>Product highlights</h3>
-                            <p>Helps people find players, sport locations & events in their current city. Builds a community around sport lovers.</p>
-                        </div>
-                        <div class="v-col-1">
-                            <img class="image center" width="1000" src="assets/img/sportmix/start.jpg"/>
-                        </div>
+            </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    
+                    <div class="v-col-1"> 
+                        <h3>Challenge</h3>
+                        <p>Currently people are starting to be more aware about the importance of their health and there is a growing trend of going to the gym. Activities by interacting with friends or other people are a healthier and more enjoyable way to spend the time destined to exercise. Having this in mind, we noticed a really common problem when people what to practice a team sport - not having available friends or enough team members to properly do it.</p>
+                    </div>
+                    <div class="v-col-1"> 
+                        <h3>Goals</h3>
+                        <p>Help people find co-players every time they plan to do sport, connectiong them in the real world using a virtual incentive, making practicing team sports more accessible.</p>
                     </div>
                 </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
+            </div>
+
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <h2>Solution</h2>
+                        <p>Our soultion was to create a web platform with the posibility to extend as an mobile app once it experienced traction. From a list of features, we narrowed it down to the core 4 that would make up our MVP.</p>
+                    </div>
+                    <div class="v-col-2"> </div>
+                    <div class="v-col-2">
+                       <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+                    </div>
+                </div>
+            </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-2">
+                        <h3>Feature 1: Search sport locations/events/users from a city</h3>
+                        <p><strong>WHAT:</strong> Users are provided with a database of sport locations/events/users from their city.</p>
+                        <p><strong>WHY:</strong> Helps people to discover where they can practice their desired sport, find events and other people with who to play.</p>
+                        <p><strong>GOAL:</strong> Users can get started more quickly discovering events in sport locations and partner locations increase their visibility and bookings.</p>
+                    </div>
+                    <div class="v-col-1">
+                        <img class="image center" width="800" src="assets/img/sportmix/w01.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <img class="image center" width="800" src="assets/img/sportmix/w02.jpg" />
+                    </div>
+                    <div class="v-col-2">
+                        <h3>Feature 2: Join a sport event</h3>
+                        <p><strong>WHAT:</strong> Users are provided with more informations about the selected event and with the ability to join the event.</p>
+                        <p><strong>WHY:</strong> Helps people to organise the event and not overbook the spots.</p>
+                        <p><strong>GOAL:</strong> Ecourage users to join events.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    
+                    <div class="v-col-2">
+                        <h3>Feature 3: Create a sport event</h3>
+                        <p><strong>WHAT:</strong> Users are able to not only join existing events, but create their own using the available locations database.</p>
+                        <p><strong>WHY:</strong> Allows users to create their own sport event and find players.</p>
+                        <p><strong>GOAL:</strong> Encourage users to book locations and organise sport meetups.</p>
+                    </div>
+                    <div class="v-col-1">
+                        <img class="image center" width="1000" src="assets/img/sportmix/w03.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <img class="image center" width="1000" src="assets/img/sportmix/w04.jpg" />
+                    </div>
+                    <div class="v-col-2">
+                        <h3>Feature 4: Give feedback to users</h3>
+                        <p><strong>WHAT:</strong> Request users to give a "one click" feedback to their co-players.</p>
+                        <p><strong>WHY:</strong> Allows users to filter out bad people.</p>
+                        <p><strong>GOAL:</strong> Keep the comunity as harmonious as possible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="v-segment-wide light">
+                <div class="v-content">
+                    
+                    <!-- <div class="v-col-2">
                         
-                        <div class="v-col-1"> 
-                            <h3>Challenge</h3>
-                            <p>Currently people are starting to be more aware about the importance of their health and there is a growing trend of going to the gym. Activities by interacting with friends or other people are a healthier and more enjoyable way to spend the time destined to exercise. Having this in mind, we noticed a really common problem when people what to practice a team sport - not having available friends or enough team members to properly do it.</p>
-                        </div>
-                        <div class="v-col-1"> 
-                            <h3>Goals</h3>
-                            <p>Help people find co-players every time they plan to do sport, connectiong them in the real world using a virtual incentive, making practicing team sports more accessible.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="v-segment-wide">
-                        <img class="image center scene_element scene_element--fadein" src="assets/img/sportmix/h-sportmix.jpg" />
-                </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <h2>Solution</h2>
-                            <p>Our soultion was to create a web platform with the posibility to extend as an mobile app once it experienced traction. From a list of features, we narrowed it down to the core 4 that would make up our MVP.</p>
-                        </div>
-                        <div class="v-col-2"> </div>
-                        <div class="v-col-2">
-                           <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-2">
-                            <h3>Feature 1: Search sport locations/events/users from a city</h3>
-                            <p><strong>WHAT:</strong> Users are provided with a database of sport locations/events/users from their city.</p>
-                            <p><strong>WHY:</strong> Helps people to discover where they can practice their desired sport, find events and other people with who to play.</p>
-                            <p><strong>GOAL:</strong> Users can get started more quickly discovering events in sport locations and partner locations increase their visibility and bookings.</p>
-                        </div>
-                        <div class="v-col-1">
-                            <img class="image center" width="800" src="assets/img/sportmix/w01.jpg" />
-                        </div>
-                    </div>
-                </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <img class="image center" width="800" src="assets/img/sportmix/w02.jpg" />
-                        </div>
-                        <div class="v-col-2">
-                            <h3>Feature 2: Join a sport event</h3>
-                            <p><strong>WHAT:</strong> Users are provided with more informations about the selected event and with the ability to join the event.</p>
-                            <p><strong>WHY:</strong> Helps people to organise the event and not overbook the spots.</p>
-                            <p><strong>GOAL:</strong> Ecourage users to join events.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
                         
-                        <div class="v-col-2">
-                            <h3>Feature 3: Create a sport event</h3>
-                            <p><strong>WHAT:</strong> Users are able to not only join existing events, but create their own using the available locations database.</p>
-                            <p><strong>WHY:</strong> Allows users to create their own sport event and find players.</p>
-                            <p><strong>GOAL:</strong> Encourage users to book locations and organise sport meetups.</p>
-                        </div>
-                        <div class="v-col-1">
-                            <img class="image center" width="1000" src="assets/img/sportmix/w03.jpg" />
-                        </div>
+                    </div> -->
+                    <div class="v-col-2">
+                        <img class="image center" width="1000" src="assets/img/sportmix/profile.jpg" />
+                        <h3 style="text-align: center;">Hanna Spartana</h3>
                     </div>
-                </div>
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <img class="image center" width="1000" src="assets/img/sportmix/w04.jpg" />
-                        </div>
-                        <div class="v-col-2">
-                            <h3>Feature 4: Give feedback to users</h3>
-                            <p><strong>WHAT:</strong> Request users to give a "one click" feedback to their co-players.</p>
-                            <p><strong>WHY:</strong> Allows users to filter out bad people.</p>
-                            <p><strong>GOAL:</strong> Keep the comunity as harmonious as possible.</p>
-                        </div>
+                    <div class="v-col-1">
+                        <h2>Personas</h2>
+                        <p>Facts</p> 
+                        <ul>
+                            <li>Female, 28 years old, Cluj-Napoca</li>
+                            <li>Employee / office work</li>
+                            <li>Likes to be in the best shape</li>
+                            <li>Sociable</li>
+                        </ul>
+                        <p>Behaviours</p>
+                        <ul>
+                            <li>Likes to keep her body healthy and good looking</li>
+                            <li>Goes regulary to the gym</li>
+                            <li>Likes to spend a lot of time with friends/people</li>
+                            <li>Loves to explore the nature</li>
+                        </ul>
+                        <p>Needs and Goals</p>
+                        <ul>
+                            <li>Wants to play some team sports</li>
+                            <li>Needs to find people with who can play</li>
+                        </ul>
+                        <p>Further fragmentation of needs:</p>
+                        <ul>
+                            <li>Find sport locations</li>
+                            <li>Find sport events</li>
+                            <li>Find sport amateurs</li>
+                        </ul>
                     </div>
+                    
                 </div>
+            </div>
 
-                <div class="v-segment-wide light">
-                    <div class="v-content">
-                        
-                        <!-- <div class="v-col-2">
-                            
-                            
-                        </div> -->
-                        <div class="v-col-2">
-                            <img class="image center" width="1000" src="assets/img/sportmix/profile.jpg" />
-                            <h3 style="text-align: center;">Hanna Spartana</h3>
-                        </div>
-                        <div class="v-col-1">
-                            <h2>Personas</h2>
-                            <p>Facts</p> 
-                            <ul>
-                                <li>Female, 28 years old, Cluj-Napoca</li>
-                                <li>Employee / office work</li>
-                                <li>Likes to be in the best shape</li>
-                                <li>Sociable</li>
-                            </ul>
-                            <p>Behaviours</p>
-                            <ul>
-                                <li>Likes to keep her body healthy and good looking</li>
-                                <li>Goes regulary to the gym</li>
-                                <li>Likes to spend a lot of time with friends/people</li>
-                                <li>Loves to explore the nature</li>
-                            </ul>
-                            <p>Needs and Goals</p>
-                            <ul>
-                                <li>Wants to play some team sports</li>
-                                <li>Needs to find people with who can play</li>
-                            </ul>
-                            <p>Further fragmentation of needs:</p>
-                            <ul>
-                                <li>Find sport locations</li>
-                                <li>Find sport events</li>
-                                <li>Find sport amateurs</li>
-                            </ul>
-                        </div>
-                        
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-3">
+                        <h2>Use cases</h2>
+                    </div>
+                    <div class="v-col-1">
+                        <h3>01. Search for events for a specific sport</h3>
+                        <p>- Log in and browse existing events for a particular sport</p>
+                        <p>- Find event and join it</p>
+                        <p>- After the end date of the event, give/get user feedback</p>
+                    
+                        <h3>02. Search for events at a particular location</h3>
+                        <p>- Log in and search for a specific sport location</p>
+                        <p>- Check active events at that location and join them</p>
+                        <p>- After the end date of the event, give/get user feedback</p>
+                    <!-- </div>
+                    <div class="v-col-1"> -->
+                        <h3>03. Create an event if there are none existing</h3>
+                        <p>- Log in and search events for a particular sport/location</p>
+                        <p>- If no events available, create event</p>
+                        <p>- After the end date of the event, give/get user feedback</p>
+                    
+                        <h3>04. Explore randomly for sports, events or users</h3>
+                        <p>- Log in and explore random events/locations or users</p>
+                        <p>- Join event</p>
+                        <p>- After the end date of the event, give/get user feedback</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-3">
-                            <h2>Use cases</h2>
-                        </div>
-                        <div class="v-col-1">
-                            <h3>01. Search for events for a specific sport</h3>
-                            <p>- Log in and browse existing events for a particular sport</p>
-                            <p>- Find event and join it</p>
-                            <p>- After the end date of the event, give/get user feedback</p>
-                        
-                            <h3>02. Search for events at a particular location</h3>
-                            <p>- Log in and search for a specific sport location</p>
-                            <p>- Check active events at that location and join them</p>
-                            <p>- After the end date of the event, give/get user feedback</p>
-                        <!-- </div>
-                        <div class="v-col-1"> -->
-                            <h3>03. Create an event if there are none existing</h3>
-                            <p>- Log in and search events for a particular sport/location</p>
-                            <p>- If no events available, create event</p>
-                            <p>- After the end date of the event, give/get user feedback</p>
-                        
-                            <h3>04. Explore randomly for sports, events or users</h3>
-                            <p>- Log in and explore random events/locations or users</p>
-                            <p>- Join event</p>
-                            <p>- After the end date of the event, give/get user feedback</p>
-                        </div>
+            <div class="v-segment-wide light">
+                <div class="v-content">  
+                    <div class="v-col-3">
+                        <h2>App flow</h2>
+                    </div>
+                    <div class="v-col-1">
+                        <img class="image center" src="assets/img/sportmix/app-flow.jpg"/>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide light">
-                    <div class="v-content">  
-                        <div class="v-col-3">
-                            <h2>App flow</h2>
-                        </div>
-                        <div class="v-col-1">
-                            <img class="image center" src="assets/img/sportmix/app-flow.jpg"/>
-                        </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-2"> 
+                        <h2>Taking the brand further</h2>  
+                        <p>Sportmix brand is based on 4 major values: freedom, healthiness, community and fun.</p>
+                        <p>The concept for the name is based on two words - sport & mix that could be interpreted as the mix of sport categories that you can experience on the platform or the mix of people that are building the community. Another criteria for choosing this name was the melody and the easy to remember quality so that can be appealing to a larger spectrum of users.</p>
+                        <br>
+                        <img class="" src="assets/img/sportmix/logo.png"/>
+                        <p>Color palette 
+                            <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #fff;"></span>
+                            <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #f3f3f3;"></span>
+                            <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #c4cad0;"></span>
+                            <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #9ad00a;"></span>
+                        </p>
+                        <p style="text-align: left;">Font: Helvetica</p>
+                    </div>
+                    <!-- <div class="v-col-1">
+                        <img class="image" src="assets/img/sportmix/band.png"/>
+                    </div> -->
+                    <div class="v-col-2"> 
+                        <img class="image center" src="assets/img/sportmix/hoodie.jpg"/>
                     </div>
                 </div>
+            </div>
+            <div class="v-segment-wide light">
+                <div class="v-content">  
+                    <div class="v-col-1"> 
+                        <!-- <h2>12 col. grid</h2> -->
+                        <img class="image center" src="assets/img/sportmix/grid.jpg"/>
+                    </div>
+                </div>
+            </div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-2"> 
-                            <h2>Taking the brand further</h2>  
-                            <p>Sportmix brand is based on 4 major values: freedom, healthiness, community and fun.</p>
-                            <p>The concept for the name is based on two words - sport & mix that could be interpreted as the mix of sport categories that you can experience on the platform or the mix of people that are building the community. Another criteria for choosing this name was the melody and the easy to remember quality so that can be appealing to a larger spectrum of users.</p>
-                            <br>
-                            <img class="" src="assets/img/sportmix/logo.png"/>
-                            <p>Color palette 
-                                <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #fff;"></span>
-                                <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #f3f3f3;"></span>
-                                <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #c4cad0;"></span>
-                                <span style="width: 20px; height: 20px; display: inline-block; float: right; background: #9ad00a;"></span>
-                            </p>
-                            <p style="text-align: left;">Font: Helvetica</p>
-                        </div>
-                        <!-- <div class="v-col-1">
-                            <img class="image" src="assets/img/sportmix/band.png"/>
-                        </div> -->
-                        <div class="v-col-2"> 
-                            <img class="image center" src="assets/img/sportmix/hoodie.jpg"/>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/01.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p01.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">01.</h2>
+                        <p style="text-align: center;">Home</p>
                     </div>
                 </div>
-                <div class="v-segment-wide light">
-                    <div class="v-content">  
-                        <div class="v-col-1"> 
-                            <!-- <h2>12 col. grid</h2> -->
-                            <img class="image center" src="assets/img/sportmix/grid.jpg"/>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/01.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p01.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">01.</h2>
-                            <p style="text-align: center;">Home</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/02.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p02.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">02.</h2>
+                        <p style="text-align: center;">Login</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/02.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p02.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">02.</h2>
-                            <p style="text-align: center;">Login</p>
-                        </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/02a.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p02a.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">03.a</h2>
+                        <p style="text-align: center;">Create profile: bio</p>
+                    </div>
+                    <div class="v-col-1">
+                        <a href="./sportmix/02b.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p02b.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">03.b</h2>
+                        <p style="text-align: center;">Select sports</p>
+                    </div>
+                    <div class="v-col-1">
+                        <a href="./sportmix/02c.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p02c.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">03.c</h2>
+                        <p style="text-align: center;">Select level</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/02a.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p02a.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">03.a</h2>
-                            <p style="text-align: center;">Create profile: bio</p>
-                        </div>
-                        <div class="v-col-1">
-                            <a href="./sportmix/02b.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p02b.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">03.b</h2>
-                            <p style="text-align: center;">Select sports</p>
-                        </div>
-                        <div class="v-col-1">
-                            <a href="./sportmix/02c.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p02c.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">03.c</h2>
-                            <p style="text-align: center;">Select level</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/03.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p03.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">04.</h2>
+                        <p style="text-align: center;">Explore events</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/03.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p03.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">04.</h2>
-                            <p style="text-align: center;">Explore events</p>
-                        </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/03a.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p03a.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">05.</h2>
+                        <p style="text-align: center;">Feedback notification</p>
+                    </div>
+                     <div class="v-col-1">
+                        <a href="./sportmix/03b.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p03b.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">06.</h2>
+                        <p style="text-align: center;">Feedback form</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/03a.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p03a.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">05.</h2>
-                            <p style="text-align: center;">Feedback notification</p>
-                        </div>
-                         <div class="v-col-1">
-                            <a href="./sportmix/03b.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p03b.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">06.</h2>
-                            <p style="text-align: center;">Feedback form</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/04.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p04.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">07.</h2>
+                        <p style="text-align: center;">Explore locations</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/04.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p04.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">07.</h2>
-                            <p style="text-align: center;">Explore locations</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/05.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p05.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">08.</h2>
+                        <p style="text-align: center;">Explore users</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/05.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p05.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">08.</h2>
-                            <p style="text-align: center;">Explore users</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/06.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p06.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">09.</h2>
+                        <p style="text-align: center;">Event details</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/06.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p06.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">09.</h2>
-                            <p style="text-align: center;">Event details</p>
-                        </div>
+            <div class="v-segment-wide dark">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/07.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p07.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">10.</h2>
+                        <p style="text-align: center;">Location details</p>
+                    </div>
+                    <div class="v-col-1">
+                        <a href="./sportmix/07a.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p07a.jpg"/>
+                        </a>
+                        <h2 style="text-align: center;">11.</h2>
+                        <p style="text-align: center;">Create event</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide dark">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/07.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p07.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">10.</h2>
-                            <p style="text-align: center;">Location details</p>
-                        </div>
-                        <div class="v-col-1">
-                            <a href="./sportmix/07a.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p07a.jpg"/>
-                            </a>
-                            <h2 style="text-align: center;">11.</h2>
-                            <p style="text-align: center;">Create event</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <a href="./sportmix/08.html" target="_blank">
+                            <img class="image center screen" src="assets/img/sportmix/p08.jpg"/>
+                        </a>
+                    </div>
+                    <div class="v-col-1">
+                        <h2 style="text-align: center;">12.</h2>
+                        <p style="text-align: center;">User profile</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <a href="./sportmix/08.html" target="_blank">
-                                <img class="image center screen" src="assets/img/sportmix/p08.jpg"/>
-                            </a>
-                        </div>
-                        <div class="v-col-1">
-                            <h2 style="text-align: center;">12.</h2>
-                            <p style="text-align: center;">User profile</p>
-                        </div>
+            <div class="v-segment-wide neutral">
+                <div class="v-content">
+                    <div class="v-col-1">
+                        <!-- <h2 style="text-align: center;"><a href="http://sportmix.ro" target="_blank">live</a></h2> -->
+                        <img class="image center" src="assets/img/sig-grey.png"/>
                     </div>
                 </div>
+            </div>
 
-                <div class="v-segment-wide neutral">
-                    <div class="v-content">
-                        <div class="v-col-1">
-                            <!-- <h2 style="text-align: center;"><a href="http://sportmix.ro" target="_blank">live</a></h2> -->
-                            <img class="image center" src="assets/img/sig-grey.png"/>
-                        </div>
-                    </div>
+            <div class="v-segment-wide dark" style="height: 85vh; background: url('assets/img/city365/h-city365.jpg')no-repeat fixed 50%; background-size: cover;">
+                <div class="v-content">
+                    <h2 class="v-next-project"><a style="color: #fff" href="d-city365.html">Whanna see another?</a></h2>
                 </div>
-
-                <div class="v-segment-wide dark" style="height:100vh; overflow: hidden; background: url('assets/img/city365/h-city365.jpg') center center; background-size: cover; background-position: fixed;">
-                    <div class="v-content">
-                        <div class="v-col-1"> 
-                            <h2 class="v-next-project">coming next</h2>
-                            <h2 class="v-project-title"><a style="color: #fff" href="d-city365.html">city365</a></h2>
-                        </div>
-                    </div>
-                </div>
-
-            </div> <!--.main -->
+            </div>
            
         </div> <!-- page -->
        
       </div> <!-- landing-layout -->
     </div><!-- main-->
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <!-- <script src="assets/js/jquery.smoothState.min.js"></script> -->
-    <!-- <script src="assets/js/onepage-scroll.js"></script> -->
+    <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
       // auto go to next project
-      // $(window).scroll(function() {
-      //   if($(window).scrollTop() + $(window).height() == getDocHeight()) {
-      //     window.location = 'd-city365.html'
-      //   }
-      //   var scrollTop = $(this).scrollTop();
-      //   $('main').css({
-      //       opacity: function() {
-      //         var elementHeight = $(this).height();
-      //         return 1 - (elementHeight - scrollTop) / elementHeight;
-      //       }
-          
-      //     });
-      // });
-
       $(window).scroll(function() {
-
-        var scrollTop = $(this).scrollTop();
-        var height = $(window).height();
-        var docHeight = getDocHeight();
-
-        if(scrollTop + height == docHeight){
-            $('body').css({
-                opacity: function(){
-                    var elementHeight = $(this).height();
-                    return 1 - (elementHeight - docHeight) / elementHeight;
-                }
-            });
-            window.location = 'd-city365.html'
+        if($(window).scrollTop() + $(window).height() == getDocHeight()) {
+          window.location = 'd-city365.html'
         }
-
       });
-
 
     </script>
   </body>
