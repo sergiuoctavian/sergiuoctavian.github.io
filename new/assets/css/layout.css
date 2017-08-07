@@ -42,7 +42,9 @@ img{
   opacity: 0;
   transition: opacity .5s ease-in;
 }
-
+.v-fullrez-layout img{
+  opacity: 1;
+}
 /***********************/
 
     .slider {
