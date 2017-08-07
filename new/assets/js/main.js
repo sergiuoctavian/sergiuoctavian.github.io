@@ -1,8 +1,3 @@
-$(document).ready(function() {
-    $("img").unveil(200, function() {
-        $(this).css('opacity', '1');
-    });
-});  
 
 
 function sleek(){
@@ -26,43 +21,18 @@ function sleek(){
 
 }
 
-function redirectSlider(){
-// simulate a "window.location.search" string.
-    var testurl = "?slick1=4";
-
-$(".slider")
-    .slick()
-    .each(function(){
-        
-        //if( window.location.search ) {
-        if( testurl ) {
-            
-            var $slider = $(this),
-                sliderid = $slider.slick("getSlick").instanceUid,
-                //queries = window.location.search.slice(1).split("&"),
-                queries = testurl.slice(1).split("&"),
-                checkQuery;
-                
-                console.log(sliderid);
-            
-            for( query in queries ) {
-                checkQuery = queries[query].split("=");
-                console.log(checkQuery)
-                if( checkQuery[0] === "slick" + ( sliderid + 1 ) ) {
-                    $slider.slick( "slickGoTo", parseInt( checkQuery[1], 10 ) - 1, true );
-                }
-            }
-        }
-
-    });
+function muie(){
+  // $(document).ready(function() {
+      $("img").unveil(200, function() {
+          $(this).css('opacity', '1');
+      });
+  // });  
 }
-
 
 // init carousel
 $(document).on('ready', function() {
+  muie();
   sleek();
-
-  // redirectSlider();
 });
 
 $(function() {
@@ -97,7 +67,9 @@ $(function() {
             },
             onAfter: function($container, $newContent) {
               //reinit
+              muie();
               sleek();
+              
               // redirectSlider();
             }
         },
