@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    $("img").unveil(200, function() {
+        $(this).css('opacity', '1');
+    });
+});  
+
 
 function sleek(){
   //slick carousel settings
@@ -55,6 +61,7 @@ $(".slider")
 // init carousel
 $(document).on('ready', function() {
   sleek();
+
   // redirectSlider();
 });
 
