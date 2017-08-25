@@ -5,7 +5,8 @@ function sleek(){
   $(".slider").slick({
     dots: true,
     infinite: true,
-    arrows: false
+    arrows: false,
+    vertical: true
   })
  //adding scroll behaviour
 .mousewheel(function(e) {
@@ -21,7 +22,7 @@ function sleek(){
 
 }
 
-function muie(){
+function lazyLoad(){
   // $(document).ready(function() {
       $("img").unveil(200, function() {
           $(this).css('opacity', '1');
@@ -31,8 +32,8 @@ function muie(){
 
 // init carousel
 $(document).on('ready', function() {
-  muie();
-  sleek();
+  lazyLoad();
+  // sleek();
 });
 
 $(function() {
@@ -67,8 +68,8 @@ $(function() {
             },
             onAfter: function($container, $newContent) {
               //reinit
-              muie();
-              sleek();
+              lazyLoad();
+              // sleek();
               
               // redirectSlider();
             }
@@ -78,14 +79,41 @@ $(function() {
 
 // detext bottom of page
 
-function getDocHeight() {
-  var D = document;
-  return Math.max(
-    D.body.scrollHeight, D.documentElement.scrollHeight,
-    D.body.offsetHeight, D.documentElement.offsetHeight,
-    D.body.clientHeight, D.documentElement.clientHeight
-  );
-}
+// function getDocHeight() {
+//   var D = document;
+//   return Math.max(
+//     D.body.scrollHeight, D.documentElement.scrollHeight,
+//     D.body.offsetHeight, D.documentElement.offsetHeight,
+//     D.body.clientHeight, D.documentElement.clientHeight
+//   );
+// }
 
+
+ (function () {
+    var $w = $(window);
+    var $circ = $('.animated-circle');
+    var $progCount = $('.progress-count');
+    var $prog2 = $('.progress-indicator-2');
+    var wh = $w.height();
+    var h = $('html').height();
+    var sHeight = h - wh;
+    $w.on('scroll', function () {
+        var perc = Math.max(0, Math.min(1, $w.scrollTop() / sHeight));
+        updateProgress(perc);
+    });
+
+    function updateProgress(perc) {
+        var circle_offset = 126 * perc;
+        $circ.css({
+            "stroke-dashoffset": 126 - circle_offset
+        });
+        $progCount.html(Math.round(perc * 100) + "%");
+
+        $prog2.css({
+            width: perc * 100 + '%'
+        });
+    }
+
+}());
 
 

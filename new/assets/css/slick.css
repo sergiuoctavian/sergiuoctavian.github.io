@@ -110,7 +110,7 @@
 {
     display: block;
 
-    height: auto;
+    height: 100vh;
 
     border: 1px solid transparent;
 }

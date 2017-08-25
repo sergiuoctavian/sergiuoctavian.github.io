@@ -31,7 +31,7 @@ h3{
   color: #323232
 }
 p{
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 p strong{
@@ -40,10 +40,59 @@ p strong{
 
 img{
   opacity: 0;
+  /*transform:skew(35deg);*/
   transition: opacity .5s ease-in;
+  /*transition: all .1s ease-in;*/
 }
 .v-fullrez-layout img{
   opacity: 1;
+  /*transform:skew(0deg);*/
+}
+
+#clip-arabela{
+  /*
+  Ensure background is added first
+  */  
+  background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/arabelasim/h-arabelasim.jpg) no-repeat;
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  
+  font-size: 28vw;
+  font-weight: bold;
+  text-align: center;
+}
+#clip-23film{
+  /*
+  Ensure background is added first
+  */  
+  background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/23film/h-23film.jpg) no-repeat;
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  
+  font-size: 28vw;
+  font-weight: bold;
+  text-align: center;
+}
+#clip-sportmix{
+  /*
+  Ensure background is added first
+  */  
+  background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/sportmix/h-sportmix.jpg) no-repeat;
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  
+  font-size: 28vw;
+  font-weight: bold;
+  text-align: center;
 }
 /***********************/
 
@@ -338,34 +387,75 @@ margin-left: -300px;
 top: 65%;
 }
 
+.progress-indicator {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    /*left: 0;*/
+    /*margin: auto;*/
+    width: 100px;
+    height: 100px;
+    z-index:9999;
+}
+
+.progress-indicator:hover circle{
+  fill: #fff;
+}
+
+.progress-count {
+    position: absolute;
+    bottom: -60px;
+    right: -70px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: #ddd;
+    font-weight:bold;
+}
+svg {
+    position: absolute;
+}
+circle {
+    fill: #000;
+    stroke:#ddd;
+    stroke-width: 0px;
+}
+svg .animated-circle {
+    fill: transparent;
+    stroke-width: 55px;
+    stroke: #222;
+    stroke-dasharray: 126;
+    stroke-dashoffset: 126;
+}
 
 .circle-small{
   position: fixed;
-  right: 7%;
-  bottom: 9%;
-  /*top: 30px;*/
-  /*left:0;*/
-  /*right: 0;*/
-  /*margin-right: auto;*/
-  /*margin-left: auto;*/
-  width: 100px;
-  height: 100px;
+/*  right: 7%;
+  bottom: 9%;*/
+  right: 0%;
+  left: 0%;
+  margin: auto;
+  bottom: 3%;
+
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: #000;
-  /*border: 25px solid #222;*/
+  border: 6px solid #000;
+  background: transparent;
   z-index: 99;
   opacity: 1;
   /*text-indent: -19999px;*/
   color: transparent;
   text-align: center;
-  line-height: 100px;
+  line-height: 53px;
   box-shadow: -20px 20px 50px rgba(255,255,255,0.1);
 
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
 }
 .circle-small:hover{
-  background: #fff;
+  background: #000;
   /*border: 25px solid #222;*/
   color: #f00;
   opacity: 1;
@@ -384,9 +474,9 @@ top: 65%;
     overflow: hidden;
 }
 .v-header{
-  top: 8%;
+  top: 4%;
   text-align: right;
-  right: 8%;
+  right: 4%;
   position: fixed;
   z-index: 1;
 }
@@ -502,6 +592,15 @@ top: 65%;
   position: relative;
   z-index: 99;
 }
+.v-section-title{
+  font-size: 14vw; 
+  line-height:1;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -6px;
+  position: relative;
+  z-index: 99;
+}
 .v-project-link .v-project-title{
   margin: 0% 6%;
   position: relative;
@@ -598,8 +697,8 @@ p{
   /*text-align: justify;*/
 }
 hr{
-  background: #222;
-  border: 1px solid #222;
+  background: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 h1.alert{
   font-weight: bold;
@@ -644,8 +743,8 @@ h1.alert{
 
 .image.screen{
   width: 100%;
-  max-width: 1000px;
-  box-shadow: -50px 120px 100px rgba(0,0,0,0.2);
+  max-width: 1400px;
+  /*box-shadow: -50px 120px 100px rgba(0,0,0,0.2);*/
   margin: 50px auto;
   cursor: url('../img/fullrez.png'), auto; 
   -webkit-transition: all 400ms;
@@ -653,7 +752,7 @@ h1.alert{
   transition: all 400ms;
 }
 .image.screen:hover{
-  transform: scale(1.2);
+  transform: scale(1.02);
   box-shadow: 0px 120px 100px rgba(0,0,0,0.2);
   z-index: 9999;
 }
