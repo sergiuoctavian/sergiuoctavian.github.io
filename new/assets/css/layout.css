@@ -916,12 +916,16 @@ a.text-link{
   float:left;
   margin: 4% 8%;
 }
-
-@media (max-width: 767px) {
-   .circle{
-    height: 30vw;
-    width: 30vw;
+.circle.start img{
+    width: 100%;
    }
+@media (max-width: 767px) {
+   .circle.start{
+    height: 50vw;
+    width: 50vw;
+    top: 35vh;
+   }
+   
   body.dark{
     background: transparent;
   }
