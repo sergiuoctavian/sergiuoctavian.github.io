@@ -237,7 +237,7 @@ img{
     background: #000;
     transition: all ease 2s;
     -webkit-transition: all ease 2s;
-    overflow: hidden;
+    /*overflow: hidden;*/
   
     /*animation: animatedBg 10s ease-in infinite;*/
   } 
@@ -304,6 +304,9 @@ img{
   -webkit-background-clip: circle;
   background-size: 100%;
     border: 0px solid #222;
+  }
+  .pp{
+    display: none;
   }
   .p2 .circle:before{
     z-index: -1;
@@ -434,6 +437,13 @@ top: 65%;
   opacity: 1;
 }
 
+svg{
+  opacity: 1;
+  transition: opacity .4s;
+}
+.on{
+  opacity: 0;
+}
 
 .progress-count {
     position: fixed;
@@ -607,7 +617,7 @@ svg .animated-circle {
   display: block;
   /*width: 100vw;*/
   /*height: auto;*/
-  opacity: 0;
+  /*opacity: 0;*/
   transition: all ease-in 0.5s;
   -webkit-transition: all ease-in 0.5s;
   /*-webkit-transition-delay: 1.1s;*/
@@ -615,7 +625,7 @@ svg .animated-circle {
   color: #222;
 }
 .v-project-link:hover{
-  color:#fff;
+  color:#ddd;
 }
 .slick-current .v-project-link{
   opacity: 1;
@@ -925,7 +935,7 @@ a.text-link{
     width: 50vw;
     top: 35vh;
    }
-   
+
   body.dark{
     background: transparent;
   }

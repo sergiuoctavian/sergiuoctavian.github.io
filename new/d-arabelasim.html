@@ -220,5 +220,43 @@
     <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/jquery.unveil.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        idleTimer = null;
+        idleState = false;
+        idleWait = 1800;
+
+        (function ($) {
+
+            $(document).ready(function () {
+            
+                $('*').bind('mousemove keydown scroll', function () {
+                
+                    clearTimeout(idleTimer);
+                            
+                    if (idleState == true) { 
+                        
+                        // Reactivated event
+                        $("svg, .v-header").removeClass("on");           
+                    }
+                    
+                    idleState = false;
+                    
+                    idleTimer = setTimeout(function () { 
+                        
+                        // Idle Event
+                        $("svg, .v-header").addClass("on");
+
+                        idleState = true; }, idleWait);
+                });
+                
+                $("html").trigger("mousemove");
+            
+            });
+        }) (jQuery)
+                    
+          
+                
+           
+    </script>
   </body>
 </html>
