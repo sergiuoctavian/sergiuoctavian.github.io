@@ -220,7 +220,10 @@ img{
 }
   .circle{
     display: block;
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20vh;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -234,6 +237,7 @@ img{
     background: #000;
     transition: all ease 2s;
     -webkit-transition: all ease 2s;
+    overflow: hidden;
   
     /*animation: animatedBg 10s ease-in infinite;*/
   } 
@@ -282,31 +286,40 @@ img{
     -o-transition: opacity 1s ease-in-out;
   }
 
-  .p1 .circle:after{
-    content:'';
-    opacity: 0;
-    position:absolute;
-    width: inherit;
-    height: inherit;
-    border-radius:inherit;
-    top:0;
-    left:0;
-    background: #000 url('../img/h-arabelasim.jpg') ;
-    background-size: cover;
+  .circle.p1{
+    /*content:'';*/
+    /*opacity: 0;*/
+    /*position:absolute;*/
+    /*width: inherit;*/
+    /*height: inherit;*/
+    /*border-radius:inherit;*/
+    /*top:0;*/
+    /*left:0;*/
+    /*background: #000 url('../img/h-arabelasim.jpg') ;*/
+    /*background-size: cover;*/
+    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/arabelasim/h-arabelasim.jpg) no-repeat;
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: circle;
+  background-size: 100%;
     border: 0px solid #222;
   }
-  .p2 .circle:after{
+  .p2 .circle:before{
+    z-index: -1;
     content:'';
-    opacity: 0;
+    /*opacity: 0;*/
     position:absolute;
     width: inherit;
     height: inherit;
     border-radius:inherit;
     top:0;
     left:0;
-    background: #000 url('../img/h-23film.jpg') ;
+    /*background: #000 url('../img/h-23film.jpg') ;*/
     background-size: cover;
+    transform-origin: 0 0;
     border: 0px solid #222;
+    overflow: hidden;
   }
   .p3 .circle:after{
     content:'';
@@ -356,10 +369,9 @@ img{
     opacity: 0.5;
     border: 20px solid #222;
   }
-  .p1:hover .circle:after, .p2:hover .circle:after, .p3:hover .circle:after, .p4:hover .circle:after, .p5:hover .circle:after, .p6:hover .circle:after {
+  /*.p1:hover .circle:after, .p2:hover .circle:after, .p3:hover .circle:after, .p4:hover .circle:after, .p5:hover .circle:after, .p6:hover .circle:after {
       opacity: 1;
-  }
-
+  }*/
 
 @keyframes projects{
   from {opacity:0;}
@@ -393,45 +405,62 @@ width: 100px;
 margin-left: -300px;
 top: 65%;
 }
-
+.close-icon{
+  z-index: 9999; 
+  color: red; 
+  padding: 35px 42px; 
+  margin: auto; 
+  position: absolute; 
+  opacity: 0;
+  transition: opacity 0.4s;
+  transition-delay: .2s;
+}
 .progress-indicator {
     position: fixed;
-    bottom: 3%;
-    right: 3%;
-    /*left: 0;*/
-    /*margin: auto;*/
+    top: 45vh;
+    right: 0%;
+    left: 0;
+    margin: auto;
+    padding: 0;
     width: 100px;
     height: 100px;
     z-index:9999;
 }
 
 .progress-indicator:hover circle{
-  fill: #fff;
+  fill: #000;
+}
+.progress-indicator:hover .close-icon{
+  opacity: 1;
 }
 
+
 .progress-count {
-    position: absolute;
-    bottom: -60px;
-    right: -70px;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     line-height: 100px;
-    color: #ddd;
+    color: #f00;
+    /*background: red;*/
     font-weight:bold;
+    z-index: 99;
 }
 svg {
     position: absolute;
 }
 circle {
-    fill: #000;
-    stroke:#ddd;
-    stroke-width: 0px;
+    fill: transparent;
+    stroke:#000;
+    stroke-width: 3px;
+    transition: fill 0.4s;
 }
 svg .animated-circle {
     fill: transparent;
-    stroke-width: 55px;
-    stroke: #222;
+    stroke-width: 1px;
+    stroke: #f00;
     stroke-dasharray: 126;
     stroke-dashoffset: 126;
 }
@@ -889,7 +918,10 @@ a.text-link{
 }
 
 @media (max-width: 767px) {
-
+   .circle{
+    height: 30vw;
+    width: 30vw;
+   }
   body.dark{
     background: transparent;
   }

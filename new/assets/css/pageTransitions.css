@@ -12,6 +12,15 @@
 .v-scene .scene_element--fadein {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
+
+.v-scene .scene_element--caca{
+  -webkit-animation-name: caca;
+  animation-name: caca;
+}
+.v-scene .scene_element--cacaR{
+  -webkit-animation-name: cacaR;
+  animation-name: cacaR;
+}
 /* line 22, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .v-scene .scene_element--fadeinup {
   -webkit-animation-name: fadeInUp;

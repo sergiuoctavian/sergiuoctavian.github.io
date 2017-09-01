@@ -21,14 +21,16 @@
             <div class="v-header">
                 <p style="text-align: right; font-weight: bold; line-height: 1.5;">
                     <a class="button scene_element scene_element--fadein" href="./readme.html">read me</a></br>
-                    <a class="active-tab scene_element scene_element--fadein" href="./index.html">selected projects</a>
+                    <a class="active-tab scene_element scene_element--fadein scene_element--delayed" href="./index.html">selected projects</a>
                 </p>
             </div>
 
-            <div class="circle"></div>
+            <div class="circle scene_element scene_element--caca">
+                <img class=" center scene_element scene_element--fadein scene_element--delayed" src="assets/img/h-arabelasim.jpg" data-src="assets/img/h-arabelasim.jpg"/>
+            </div>
+            
 
-            <div class="sidebar scene_element scene_element--fadeinup">
-
+            <div class=" scene_element scene_element--fadeinup">
                 <a class="" href="d-arabelasim.html">
                     <h2 class="v-project-title1">arabela</h2>
                 </a>
@@ -126,13 +128,20 @@
                     // pagination animation
                     // $('.slick-dots').addClass('start');
                     $('.circle').addClass('start');
-                    // $('.v-project-link').hover(function(){$('body').addClass('dark');}, function(){$('body').removeClass('dark');})
+
 
                     // circle animations
-                    // $('.p1 .v-project-link').hover(
-                    //     function(){ $('.circle').addClass('p1'); $('body').addClass('dark'); },
-                    //     function(){ $('.circle').removeClass('p1'); $('body').removeClass('dark'); }
-                    // )
+                    $('.p1').hover(
+                        function(){ 
+                            $('.circle').addClass('p1'); 
+                            // $('body').addClass('dark'); 
+                        },
+                        function(){ 
+                            $('.circle').removeClass('p1'); 
+                            // $('body').removeClass('dark'); 
+                        }
+                    );
+
                     // $('.p2 .v-project-link').hover(
                     //     function(){ $('.circle').addClass('p2'); $('body').addClass('dark'); },
                     //     function(){ $('.circle').removeClass('p2'); $('body').removeClass('dark'); }
@@ -162,9 +171,7 @@
     <!-- Scripts -->
     <!-- <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script> -->
     <script src="assets/js/jquery.smoothState.min.js"></script>
-    <!-- <script src="assets/js/jquery.mousewheel.min.js" type="text/javascript"></script> -->
     <script src="assets/js/jquery.unveil.js"></script>
-    <!-- <script src="assets/js/slick.min.js" type="text/javascript" charset="utf-8"></script> -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
