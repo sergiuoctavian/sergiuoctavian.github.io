@@ -741,15 +741,27 @@ a{
   color: #222;
   text-decoration: none;
 }
+.v-casestudy-layout a{
+  text-decoration: underline;
+}
 a:hover{
   opacity: 0.5;
 }
+
+a.button{
+  text-decoration: none;
+}
+
 p{
   /*text-align: justify;*/
 }
 hr{
   background: #f2f2f2;
   border: 1px solid #f2f2f2;
+}
+.dark hr{
+  background: #212121;
+  border: 1px solid #212121;
 }
 h1.alert{
   font-weight: bold;
