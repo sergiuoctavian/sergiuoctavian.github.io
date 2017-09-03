@@ -13,13 +13,13 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
-.v-scene .scene_element--caca{
-  -webkit-animation-name: caca;
-  animation-name: caca;
+.v-scene .scene_element--scale{
+  -webkit-animation-name: scale;
+  animation-name: scale;
 }
-.v-scene .scene_element--cacaR{
-  -webkit-animation-name: cacaR;
-  animation-name: cacaR;
+.v-scene .scene_element--scaleR{
+  -webkit-animation-name: scaleR;
+  animation-name: scaleR;
 }
 /* line 22, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .v-scene .scene_element--fadeinup {
@@ -33,6 +33,16 @@
 .v-scene .scene_element--fadeinleft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
+
+.v-scene .scene_element--zoominup {
+  -webkit-animation-name: zoomInUp;
+  animation-name: zoomInUp; }
+
+.v-scene .scene_element--zoomoutdown {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown; }
+
+
 /* line 32, /Users/miguelperez/Sites/csstricks/source/stylesheets/pageTransitions.css.scss */
 .v-scene .scene_element--delayed {
   -webkit-animation-delay: 0.25s;

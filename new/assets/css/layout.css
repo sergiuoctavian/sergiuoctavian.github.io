@@ -34,10 +34,10 @@ p{
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.65;
-  text-align: center;
+  /*text-align: center;*/
 }
 p strong{
-  font-size: 0.8vw;
+  /*font-size: 0.8vw;*/
 }
 
 img{
@@ -220,7 +220,7 @@ img{
 }
   .circle{
     display: block;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 20vh;
@@ -432,6 +432,7 @@ top: 65%;
 
 .progress-indicator:hover circle{
   fill: #000;
+  stroke: rgba(0,0,0,0);
 }
 .progress-indicator:hover .close-icon{
   opacity: 1;
@@ -460,17 +461,21 @@ svg{
 }
 svg {
     position: absolute;
+    left:0;
+    top:0;
+    width: 100px;
+    height: 100px;
 }
 circle {
     fill: transparent;
-    stroke:#000;
-    stroke-width: 3px;
+    stroke: rgba(0,0,0,0.5);
+    stroke-width: 1px;
     transition: fill 0.4s;
 }
 svg .animated-circle {
     fill: transparent;
-    stroke-width: 1px;
-    stroke: #f00;
+    stroke-width: 6px;
+    stroke: #000;
     stroke-dasharray: 126;
     stroke-dashoffset: 126;
 }
@@ -902,7 +907,7 @@ a.text-link{
   max-height: 150px;
   height: 100%;
   z-index: 0;
-  position: absolute; 
+  position: fixed; 
   top: 42vh; 
   right: 6%;
   background: url('../img/dots.png')no-repeat 50% 50%;

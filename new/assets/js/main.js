@@ -30,6 +30,40 @@ function scrollIndicator(){
           width: perc * 100 + '%'
       });
   }
+
+        idleTimer = null;
+        idleState = false;
+        idleWait = 1000;
+
+        (function ($) {
+
+            $(document).ready(function () {
+            
+                $('*').bind('mousemove keydown scroll', function () {
+                
+                    clearTimeout(idleTimer);
+                            
+                    if (idleState == true) { 
+                        
+                        // Reactivated event
+                        $("svg, .v-header").removeClass("on");           
+                    }
+                    
+                    idleState = false;
+                    
+                    idleTimer = setTimeout(function () { 
+                        
+                        // Idle Event
+                        $("svg, .v-header").addClass("on");
+
+                        idleState = true; }, idleWait);
+                });
+                
+                $("html").trigger("mousemove");
+            
+            });
+        }) (jQuery)
+
 }
 
 // init

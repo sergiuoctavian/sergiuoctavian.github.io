@@ -803,7 +803,7 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown; }
 
-@-webkit-keyframes caca {
+@-webkit-keyframes scale {
   0% {
     opacity: 1;
     -webkit-transform: scale(3.4);
@@ -815,7 +815,7 @@ Copyright (c) 2014 Daniel Eden
     -ms-transform: scale(1);
     transform: scale(1); }
 }
-@keyframes caca {
+@keyframes scale {
   0% {
     opacity: 1;
     -webkit-transform: scale(3.4);
@@ -827,11 +827,11 @@ Copyright (c) 2014 Daniel Eden
     -ms-transform: scale(1);
     transform: scale(1); }
 }
-.caca {
-  -webkit-animation-name: caca;
-  animation-name: caca; }
+.scale {
+  -webkit-animation-name: scale;
+  animation-name: scale; }
 
-@-webkit-keyframes cacaR {
+@-webkit-keyframes scaleR {
   0% {
     opacity: 1;
     -webkit-transform: scale(.4);
@@ -843,7 +843,7 @@ Copyright (c) 2014 Daniel Eden
     -ms-transform: scale(1);
     transform: scale(1); }
 }
-@keyframes cacaR {
+@keyframes scaleR {
   0% {
     opacity: 1;
     -webkit-transform: scale(.4);
@@ -855,9 +855,9 @@ Copyright (c) 2014 Daniel Eden
     -ms-transform: scale(1);
     transform: scale(1); }
 }
-.cacaR {
-  -webkit-animation-name: caca;
-  animation-name: caca; }
+.scaleR {
+  -webkit-animation-name: scaleR;
+  animation-name: scaleR; }
 
 
 @-webkit-keyframes fadeInDownBig {
