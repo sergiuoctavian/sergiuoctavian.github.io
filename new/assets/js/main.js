@@ -83,7 +83,10 @@ function scrollIndicator(){
 $(document).on('ready', function() {
   lazyLoad();
   scrollIndicator();
-  slide();
+  if(window.location.pathname == '/projects.html') {
+        // script body here
+        slide();
+    }
 });
 
 $(function() {
@@ -116,7 +119,10 @@ $(function() {
               //reinit
               lazyLoad();
               scrollIndicator();
-              slide();
+              if(window.location.pathname == '/projects.html') {
+                  // script body here
+                  slide();
+              }
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
