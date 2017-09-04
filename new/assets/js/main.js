@@ -6,7 +6,7 @@ function lazyLoad(){
   // });  
 }
 function slide() {
-  if(window.location.pathname == '/podcast') {
+  if(window.location.pathname == '/projects.html') {
     $.scrollify({
         section : ".section-scroll",
         easing: "easeOutExpo",
