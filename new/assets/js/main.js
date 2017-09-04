@@ -6,17 +6,19 @@ function lazyLoad(){
   // });  
 }
 function slide() {
-            $.scrollify({
-                section : ".section-scroll",
-                easing: "easeOutExpo",
-                scrollSpeed: 1100,
-                scrollbars: false,
-                // standardScrollElements: "",
-                // setHeights: true,
-                // overflowScroll: true,
-                updateHash: true,
-                touchScroll:true,
-            });
+  if(window.location.pathname == '/podcast') {
+    $.scrollify({
+        section : ".section-scroll",
+        easing: "easeOutExpo",
+        scrollSpeed: 1100,
+        scrollbars: false,
+        // standardScrollElements: "",
+        // setHeights: true,
+        // overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
+    });
+  }
 };
 
 function scrollIndicator(){
@@ -83,10 +85,7 @@ function scrollIndicator(){
 $(document).on('ready', function() {
   lazyLoad();
   scrollIndicator();
-  if(window.location.pathname == '/projects.html') {
-        // script body here
-        slide();
-    }
+  slide();
 });
 
 $(function() {
@@ -119,10 +118,7 @@ $(function() {
               //reinit
               lazyLoad();
               scrollIndicator();
-              if(window.location.pathname == '/projects.html') {
-                  // script body here
-                  slide();
-              }
+              slide();
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
