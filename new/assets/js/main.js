@@ -5,6 +5,19 @@ function lazyLoad(){
       });
   // });  
 }
+function slide() {
+            $.scrollify({
+                section : ".section-scroll",
+                easing: "easeOutExpo",
+                scrollSpeed: 1100,
+                scrollbars: false,
+                // standardScrollElements: "",
+                // setHeights: true,
+                // overflowScroll: true,
+                updateHash: true,
+                touchScroll:true,
+            });
+};
 
 function scrollIndicator(){
   var $w = $(window);
@@ -70,6 +83,7 @@ function scrollIndicator(){
 $(document).on('ready', function() {
   lazyLoad();
   scrollIndicator();
+  slide();
 });
 
 $(function() {
@@ -102,6 +116,7 @@ $(function() {
               //reinit
               lazyLoad();
               scrollIndicator();
+              slide();
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
