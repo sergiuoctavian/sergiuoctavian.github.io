@@ -6,7 +6,7 @@ function lazyLoad(){
   // });  
 }
 function slide() {
-  if(window.location.pathname == '/projects.html') {
+  // if(window.location.pathname == '/new/projects.html') {
     $.scrollify({
         section : ".section-scroll",
         easing: "easeOutExpo",
@@ -18,7 +18,7 @@ function slide() {
         updateHash: true,
         touchScroll:true,
     });
-  }
+  // }
 };
 
 function scrollIndicator(){
