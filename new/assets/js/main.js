@@ -30,6 +30,7 @@ $(function() {
               lazyLoad();
               scrollIndicator();
               slide();
+              circleBg();
             }
         },
         smoothState = $("#main").smoothState(options).data("smoothState");
@@ -54,6 +55,44 @@ function slide() {
       touchScroll:true,
   });
 };
+
+function circleBg(){
+  // $('.circle').addClass('start');
+  // circle animations
+  $('.p1').hover(
+      function(){ 
+          $('#project1').addClass('p1'); 
+      },
+      function(){ 
+          $('#project1').removeClass('p1');
+      }
+  );
+  $('.p2').hover(
+      function(){ 
+          $('#project2').addClass('p2'); 
+      },
+      function(){ 
+          $('#project2').removeClass('p2');
+      }
+  );
+  $('.p3').hover(
+      function(){ 
+          $('#project3').addClass('p3'); 
+      },
+      function(){ 
+          $('#project3').removeClass('p3');
+      }
+  );
+  $('.p4').hover(
+      function(){ 
+          $('#project4').addClass('p4'); 
+      },
+      function(){ 
+          $('#project4').removeClass('p4');
+      }
+  );
+}
+
 
 function scrollIndicator(){
   var $w = $(window);
@@ -109,6 +148,7 @@ $(document).ready(function(){
   lazyLoad();
   scrollIndicator();
   slide();
+  circleBg();
 });
 
 
