@@ -1,24 +1,58 @@
+$(function() {
+    "use strict";
+    var options = {
+            debug: true,
+            prefetch: false,
+            cacheLength: 0,
+            allowFormCaching: false,
+            blacklist: '.no-smoothState',
+            onStart: {
+                duration: 250, // Duration of our animation 
+                render: function($container) {
+                    // Add your CSS animation reversing class 
+                    $container.addClass("is-exiting");
+                    // Restart your animation 
+                    smoothState.restartCSSAnimations();
+                }
+            },
+            onReady: {
+                duration: 0,
+                render: function($container, $newContent) {
+                    // Remove your CSS animation reversing class 
+                    $container.removeClass("is-exiting");
+                    // Inject the new content 
+                    $container.html($newContent);
+                    $.scrollify.destroy();
+                }
+            },
+            onAfter: function() {
+              //reinit
+              lazyLoad();
+              scrollIndicator();
+              slide();
+            }
+        },
+        smoothState = $("#main").smoothState(options).data("smoothState");
+});
+
 function lazyLoad(){
-  // $(document).ready(function() {
-      $("img").unveil(200, function() {
-          $(this).css('opacity', '1');
-      });
-  // });  
+  $("img").unveil(200, function() {
+    $(this).css('opacity', '1');
+  }); 
 }
+
 function slide() {
-  // if(window.location.pathname == '/new/projects.html') {
-    $.scrollify({
-        section : ".section-scroll",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        scrollbars: false,
-        // standardScrollElements: "",
-        // setHeights: true,
-        // overflowScroll: true,
-        updateHash: true,
-        touchScroll:true,
-    });
-  // }
+  $.scrollify({
+      section : ".section-scroll",
+      easing: "easeOutExpo",
+      scrollSpeed: 1100,
+      scrollbars: false,
+      // standardScrollElements: "",
+      // setHeights: true,
+      // overflowScroll: true,
+      updateHash: true,
+      touchScroll:true,
+  });
 };
 
 function scrollIndicator(){
@@ -46,82 +80,35 @@ function scrollIndicator(){
       });
   }
 
-        idleTimer = null;
-        idleState = false;
-        idleWait = 1000;
+  idleTimer = null;
+  idleState = false;
+  idleWait = 1000;
 
-        (function ($) {
-
-            $(document).ready(function () {
-            
-                $('*').bind('mousemove keydown scroll', function () {
-                
-                    clearTimeout(idleTimer);
-                            
-                    if (idleState == true) { 
-                        
-                        // Reactivated event
-                        $("svg, .v-header").removeClass("on");           
-                    }
-                    
-                    idleState = false;
-                    
-                    idleTimer = setTimeout(function () { 
-                        
-                        // Idle Event
-                        $("svg, .v-header").addClass("on");
-
-                        idleState = true; }, idleWait);
-                });
-                
-                $("html").trigger("mousemove");
-            
-            });
-        }) (jQuery)
+  (function ($) {
+      $(document).ready(function () {
+          $('*').bind('mousemove keydown scroll', function () {
+              clearTimeout(idleTimer);     
+              if (idleState == true) {    
+                  // Reactivated event
+                  $("svg, .v-header").removeClass("on");           
+              }
+              idleState = false;
+              idleTimer = setTimeout(function () {    
+                  // Idle Event
+                  $("svg, .v-header").addClass("on");
+                  idleState = true; }, idleWait);
+          });
+          $("html").trigger("mousemove");
+      });
+  }) (jQuery)
 
 }
 
 // init
-$(document).on('ready', function() {
+$(document).ready(function(){
   lazyLoad();
   scrollIndicator();
   slide();
-});
-
-$(function() {
-    "use strict";
-    var options = {
-            debug: true,
-            prefetch: false,
-            cacheLength: 0,
-            allowFormCaching: false,
-            blacklist: '.no-smoothState',
-            onStart: {
-                duration: 250, // Duration of our animation 
-                render: function($container) {
-                    // Add your CSS animation reversing class 
-                    $container.addClass("is-exiting");
-                    // Restart your animation 
-                    smoothState.restartCSSAnimations();
-                }
-            },
-            onReady: {
-                duration: 0,
-                render: function($container, $newContent) {
-                    // Remove your CSS animation reversing class 
-                    $container.removeClass("is-exiting");
-                    // Inject the new content 
-                    $container.html($newContent);
-                }
-            },
-            onAfter: function($container, $newContent) {
-              //reinit
-              lazyLoad();
-              scrollIndicator();
-              slide();
-            }
-        },
-        smoothState = $("#main").smoothState(options).data("smoothState");
 });
 
 

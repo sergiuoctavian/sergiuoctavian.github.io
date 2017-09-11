@@ -286,7 +286,7 @@ img{
     -o-transition: opacity 1s ease-in-out;
   }
 
-  .circle.p1{
+  /*.index.p1{*/
     /*content:'';*/
     /*opacity: 0;*/
     /*position:absolute;*/
@@ -297,14 +297,27 @@ img{
     /*left:0;*/
     /*background: #000 url('../img/h-arabelasim.jpg') ;*/
     /*background-size: cover;*/
-    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/arabelasim/h-arabelasim.jpg) no-repeat;
+    /*background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/arabelasim/h-arabelasim.jpg) no-repeat;*/
   
-   background-attachment: fixed;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: circle;
-  background-size: 100%;
-    border: 0px solid #222;
-  }
+   /*background-attachment: fixed;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*-webkit-background-clip: test;*/
+  /*background-size: 100%;*/
+    /*border: 0px solid #222;*/
+  /*}*/
+
+    .secton-scroll.p1{
+      background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/arabelasim/h-arabelasim.jpg) no-repeat;
+    }
+    .secton-scroll.p2{
+      background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/23film/h-23film.jpg) no-repeat;
+    }
+    .secton-scroll.p3{
+      background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/sportmix/h-sportmix.jpg) no-repeat;
+    }
+    .secton-scroll.p4{
+      background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/city365/h-city365.jpg) no-repeat;
+    }
   .pp{
     display: none;
   }
@@ -618,7 +631,8 @@ svg .animated-circle {
 .v-project-link{
   position: absolute;
   /*margin-left: -30%;*/
-  margin-top: 55%;
+  top: 55%;
+  /*right: 0;*/
   display: block;
   /*width: 100vw;*/
   /*height: auto;*/
@@ -628,9 +642,11 @@ svg .animated-circle {
   /*-webkit-transition-delay: 1.1s;*/
   /*transition-delay: 1.1s;*/
   color: #222;
+  opacity: 1;
 }
 .v-project-link:hover{
   color:#ddd;
+  opacity: 1;
 }
 .slick-current .v-project-link{
   opacity: 1;

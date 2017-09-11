@@ -23,9 +23,9 @@
                     <a class="button" href="./readme.html"><span class="scene_element scene_element--fadeinleft">read</span> me</a></br>
                 </p>
             </div>
-                <div class="section-scroll" style=" position: relative;">
-                    <div class="p1" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
-                        <a class="v-project-link scene_element scene_element--fadeinup" href="d-arabelasim.html">
+                <div class="section-scroll" style="height:100vh; position: relative;">
+                    <div class="" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
+                        <a class="p1 v-project-link scene_element scene_element--fadeinup" href="d-arabelasim.html">
                             <h2 class="v-project-title scene_element scene_element--zoominup">arabela</h2>
                             <p class="v-project-description"><strong>design & development</strong></p>
                             <p class="v-project-description">portfolio website</p>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="section-scroll" style=" position: relative;">
+                <div class="section-scroll" style="height:100vh; position: relative;">
                     <div class="p2" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
                         <a class="v-project-link scene_element scene_element--fadeinup" href="d-23film.html">
                             <h2 class="v-project-title scene_element scene_element--zoominup">23film</h2>
@@ -43,8 +43,8 @@
                     </div>
                 </div>
 
-                <div class="section-scroll" style=" position: relative;">
-                    <div class="p2" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
+                <div class="section-scroll" style="height:100vh; position: relative;">
+                    <div class="p3" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
                         <a class="v-project-link scene_element scene_element--fadeinup" href="d-sportmix.html">
                             <h2 class="v-project-title scene_element scene_element--zoominup">sportmix</h2>
                             <p class="v-project-description"><strong>design & direction</strong></p>
@@ -53,8 +53,8 @@
                     </div>
                 </div>
 
-                <div class="section-scroll" style=" position: relative;">
-                    <div class="p2" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
+                <div class="section-scroll" style="height:100vh; position: relative;">
+                    <div class="p4" style="position: relative; height: 100vh; display: block; float: left; z-index: 9999;">
                         <a class="v-project-link scene_element scene_element--fadeinup" href="d-city365.html">
                             <h2 class="v-project-title scene_element scene_element--zoominup">city365</h2>
                             <p class="v-project-description"><strong>design & direction</strong></p>
@@ -168,16 +168,51 @@
 
 
                     // circle animations
-                    $('.pp1').hover(
+                    $('.p1').hover(
                         function(){ 
-                            $('pp').css('display','block'); 
-                            // $('body').addClass('dark'); 
+                            $('.section-scroll').addClass('p1'); 
+                            // $('.circle').removeClass('start'); 
                         },
                         function(){ 
-                            $('.circle').removeClass('p1'); 
-                            // $('body').removeClass('dark'); 
+                            $('.section-scroll').removeClass('p1'); 
+                            // $('.circle').addClass('start'); 
                         }
                     );
+                    $('.p2').hover(
+                        function(){ 
+                            $('.section-scroll').addClass('p2'); 
+                            // $('.circle').removeClass('start'); 
+                        },
+                        function(){ 
+                            $('.section-scroll').removeClass('p2'); 
+                            // $('.circle').addClass('start'); 
+                        }
+                    );
+                    $('.p3').hover(
+                        function(){ 
+                            $('.section-scroll').addClass('p3'); 
+                            // $('.circle').removeClass('start'); 
+                        },
+                        function(){ 
+                            $('.section-scroll').removeClass('p3'); 
+                            // $('.circle').addClass('start'); 
+                        }
+                    );
+                    $('.p4').hover(
+                        function(){ 
+                            $('.section-scroll').addClass('p4'); 
+                            // $('.circle').removeClass('start'); 
+                        },
+                        function(){ 
+                            $('.section-scroll').removeClass('p4'); 
+                            // $('.circle').addClass('start'); 
+                        }
+                    );
+
+
+
+
+
 
                     // $('.p2 .v-project-link').hover(
                     //     function(){ $('.circle').addClass('p2'); $('body').addClass('dark'); },
