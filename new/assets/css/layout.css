@@ -254,7 +254,7 @@ img{
   }
   .circle.start:hover{
     /*border: 50px solid #222;*/
-    /*width: 55vh;*/
+    /*width: 55vh;*/margin-left: 30vw;
     /*height: 55vh;*/
     box-shadow: 0;
   }
@@ -666,6 +666,7 @@ svg .animated-circle {
   /*margin-left: -30%;*/
   top: 55%;
   /*right: 0;*/
+  margin-left: 30vw;
   display: block;
   /*width: 100vw;*/
   /*height: auto;*/
