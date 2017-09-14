@@ -1040,29 +1040,6 @@ a.text-link{
     text-align: center;
     font-size: 5vh;
   }*/
-
-/*  .circle-small{
-    top: auto;
-    bottom: 20px;
-    left: auto;
-    right: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }*/
-  /*.v-segment{
-    width: auto;
-    margin: 30px;
-    text-align: center;
-  }*/
-/*  .v-project-description{
-    display: none;
-  }*/
-  /*.v-project-link .v-project-title{
-    font-size: 23vw; 
-    line-height:1;
-    letter-spacing: -3px;
-    margin: 13% 15%;
-  }*/
   .index .v-project-title{
     /*font-size: 22vw;*/
     letter-spacing: -3px;
@@ -1073,6 +1050,20 @@ a.text-link{
   .v-project-description{
     color: #fff;
   }
+
+  #project1::before{
+    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/h-arabelasim.jpg) no-repeat; background-size: 200%;
+  }
+  #project2::before{
+    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/h-23film.jpg) no-repeat; background-size: 200%;
+  }
+  #project3::before{
+    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/h-sportmix.jpg) no-repeat; background-size: 200%;
+  }
+  #project4::before{
+    background: linear-gradient(to bottom, #222, rgba(0,0,0,0.1)),url(../img/h-city365.jpg) no-repeat; background-size: 200%;
+  }
+
   #project1::before, #project2::before, #project3::before, #project4::before {
       opacity: 1;
   }
@@ -1088,7 +1079,7 @@ a.text-link{
   p{
     font-size: 5vw;
     line-height: 1.95;
-    text-align: center;
+    text-align: left;
   }
   /*.projects{
     margin-top: 55vh; 
