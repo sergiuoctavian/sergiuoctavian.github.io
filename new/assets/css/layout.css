@@ -997,15 +997,15 @@ a.text-link{
     width: 100%;
    }
 @media (max-width: 767px) {
-   .circle.start{
+   .circle{
     height: 50vw;
     width: 50vw;
     top: 35vh;
    }
 
-  body.dark{
+  /*body.dark{
     background: transparent;
-  }
+  }*/
 
   .v-content{
     display: initial;
@@ -1018,31 +1018,14 @@ a.text-link{
   .v-project-header{
     margin: 58% 8%;
   }
-
-  .slick-active .circle.start{
-    width: 40vh;
-    height: 40vh;
-    /*border: 29px solid #222;*/
-    /*top: -40vh;*/
-  }
-  .slick-dots{
-    display: none!important;
-/*    right:0;
-    left: 0;
-    margin: auto;
-    top: 78vh;*/
-  }
-  .onepage-pagination:after{
-    content: "select";
-  }
   .dots{
     right: 0;
-    bottom: 0;
-    top: auto;
+    left: 0;
+    /*top: auto;*/
     z-index: 1;
     opacity: 0;
   }
-  .dots:after{
+ /* .dots:after{
     content: 'Scroll';
     position: absolute;
     bottom: 8vh;
@@ -1050,39 +1033,39 @@ a.text-link{
     right: 0;
     text-align: center;
     font-size: 5vh;
-  }
+  }*/
 
-  .circle-small{
+/*  .circle-small{
     top: auto;
     bottom: 20px;
     left: auto;
     right: 20px;
     margin-right: auto;
     margin-left: auto;
-  }
-  .v-segment{
+  }*/
+  /*.v-segment{
     width: auto;
     margin: 30px;
     text-align: center;
-  }
-  .v-project-description{
+  }*/
+/*  .v-project-description{
     display: none;
-  }
-  .v-project-link .v-project-title{
+  }*/
+  /*.v-project-link .v-project-title{
     font-size: 23vw; 
     line-height:1;
     letter-spacing: -3px;
     margin: 13% 15%;
-  }
+  }*/
   .v-project-title{
-    font-size: 22vw;
+    /*font-size: 22vw;*/
     letter-spacing: -3px;
-    margin-top: 50vh;
-    padding-bottom: 50%; 
+    /*margin-top: 50vh;*/
+    /*padding-bottom: 50%; */
   }
-  .v-year{
+  /*.v-year{
     margin: 30% auto 0;
-  }
+  }*/
   h2{
     letter-spacing: -1px;
   }
@@ -1094,12 +1077,12 @@ a.text-link{
     line-height: 1.95;
     text-align: center;
   }
-  .projects{
+  /*.projects{
     margin-top: 55vh; 
-  }
-  .v-header-type-2{
+  }*/
+ /* .v-header-type-2{
     font-size: 8vw;
-  }
+  }*/
   .v-col-3, .v-col-2, .v-col-1{
     width: 100%;
     padding: 4%;

@@ -125,6 +125,10 @@ function scrollIndicator(){
 
   (function ($) {
       $(document).ready(function () {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        
+        } else{
+          
           $('*').bind('mousemove keydown scroll', function () {
               clearTimeout(idleTimer);     
               if (idleState == true) {    
@@ -137,7 +141,10 @@ function scrollIndicator(){
                   $("svg, .v-header").addClass("on");
                   idleState = true; }, idleWait);
           });
+
           $("html").trigger("mousemove");
+        }
+        
       });
   }) (jQuery)
 
