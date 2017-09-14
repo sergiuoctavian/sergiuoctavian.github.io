@@ -1004,7 +1004,10 @@ a.text-link{
     top: auto;
     right: 5px;
    }
-
+   .progress-indicator{
+    top: auto;
+    bottom: 5px;
+   }
   /*body.dark{
     background: transparent;
   }*/
