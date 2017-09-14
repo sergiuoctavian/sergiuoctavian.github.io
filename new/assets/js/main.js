@@ -67,6 +67,17 @@ function circleBg(){
           $('#project1').removeClass('p1');
       }
   );
+
+$('.p1').focus(
+      function(){ 
+          $('#project1').addClass('p1'); 
+      },
+      function(){ 
+          $('#project1').removeClass('p1');
+      }
+  );
+
+
   $('.p2').hover(
       function(){ 
           $('#project2').addClass('p2'); 
@@ -144,7 +155,7 @@ function scrollIndicator(){
 
           $("html").trigger("mousemove");
         }
-        
+
       });
   }) (jQuery)
 

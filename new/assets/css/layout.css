@@ -1024,6 +1024,7 @@ a.text-link{
     /*top: auto;*/
     z-index: 1;
     opacity: 0;
+    display: none;
   }
  /* .dots:after{
     content: 'Scroll';
