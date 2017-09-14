@@ -998,11 +998,11 @@ a.text-link{
    }
 @media (max-width: 767px) {
    .circle{
-    height: 20vw;
-    width: 20vw;
-    bottom: 5px;
-    top: auto;
-    right: 5px;
+    height: 40vw;
+    width: 40vw;
+    /*bottom: 5px;*/
+    top: 50vh;
+    /*right: 5px;*/
    }
    .progress-indicator{
     top: auto;
