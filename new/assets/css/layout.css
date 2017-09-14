@@ -998,9 +998,11 @@ a.text-link{
    }
 @media (max-width: 767px) {
    .circle{
-    height: 50vw;
-    width: 50vw;
-    top: 35vh;
+    height: 20vw;
+    width: 20vw;
+    bottom: 5px;
+    top: auto;
+    right: 5px;
    }
 
   /*body.dark{
@@ -1058,11 +1060,15 @@ a.text-link{
     letter-spacing: -3px;
     margin: 13% 15%;
   }*/
-  .v-project-title{
+  .index .v-project-title{
     /*font-size: 22vw;*/
     letter-spacing: -3px;
+    color: #fff;
     /*margin-top: 50vh;*/
     /*padding-bottom: 50%; */
+  }
+  .v-project-description{
+    color: #fff;
   }
   #project1::before, #project2::before, #project3::before, #project4::before {
       opacity: 1;
