@@ -1064,6 +1064,9 @@ a.text-link{
     /*margin-top: 50vh;*/
     /*padding-bottom: 50%; */
   }
+  #project1::before, #project2::before, #project3::before, #project4::before {
+      opacity: 1;
+  }
   /*.v-year{
     margin: 30% auto 0;
   }*/
