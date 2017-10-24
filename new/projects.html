@@ -26,7 +26,7 @@
                 <p class="scene_element scene_element--fadein scene_element--delayed" style="position: fixed; top:48vh; left:3%; text-align: left; font-size: 12px; text-transform: uppercase;"><strong class="red">scroll</strong> trough selected projects</p>
             </div>
 
-            <div class="v-segment-wide dark" style="">
+            <div class="v-segment-wide" style="z-index: 99999;">
 
                 <div id="project1" class="section-scroll">
                     <div class="container">
@@ -71,9 +71,8 @@
                 <div class="circle scene_element scene_element--scale" style="position: fixed;"></div>
 
                 <!-- <div class="dots scene_element scene_element--fadeinleft"></div> -->
-
+                <canvas id="canvas"></canvas>
             </div>
-
         </div> <!-- page -->
       </div> <!-- landing-layout -->
     </div><!-- main-->
@@ -83,6 +82,7 @@
     <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/jquery.unveil.js"></script>
     <script src="assets/js/jquery.scrollify.min.js"></script>
+    <script src="assets/js/particles.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -21,27 +21,31 @@
             <div class="v-header">
                 <p style="text-align: right; font-weight: bold; line-height: 1.5;">
                     <!-- <a class="button" href="./readme.html"><span class="scene_element scene_element--fadeinleft">read</span> me</a></br> -->
-                    <p style="text-align: left; font-size: 12px; text-transform: uppercase;" class="red scene_element scene_element--fadein scene_element--delayed">Click the <strong>circle</strong> to begin</p>
+                    <p style="text-align: left; font-size: 12px; text-transform: uppercase;" class="red scene_element scene_element--fadein scene_element--delayed">Click  to begin</p>
                 </p>
             </div>
-            <div style="height:100vh; position: relative;">
+            <div class="v-segment-wide dark">
+                <div style="height:100vh; position: relative;">
       
-                <a class="circle scene_element scene_element--scale scene_element--delayed" href="projects.html">     
-                    <!-- <p style="margin-top: 50%; text-align: center; font-size: 12px; text-transform: uppercase;" class="red scene_element scene_element--fadein scene_element--delayed">enter</p> -->
-                     <img class="image center" style="position: absolute; left:0; right: 0; bottom: 45%; width:200px;" src="assets/img/logo-neg.png" data-src="assets/img/logo-poz.png"/>  
-                </a>
+                    <a class="scene_element scene_element--zoominup scene_element--delayed" href="projects.html">     
+                        <!-- <p style="margin-top: 50%; text-align: center; font-size: 12px; text-transform: uppercase;" class="red scene_element scene_element--fadein scene_element--delayed">enter</p> -->
+                        <img class="image center" style="position: absolute; left:0; right: 0; bottom: 45%; width:200px;" src="assets/img/logo-neg.png" data-src="assets/img/logo-poz.png"/>  
+                    </a>
 
-                <p style="text-align: center; position: absolute; right: 0; left: 0; bottom: 2%;font-size: 16px;">Individually run multi-discipline creative studio by Sergiu-Octavian.</p>
+                    <p style="text-align: center; position: absolute; right: 0; left: 0; bottom: 2%;font-size: 16px; color: #fff;">Individually run multi-discipline creative studio by Sergiu-Octavian.</p>
 
-            </div>        
-        </div> <!--.main -->
+                </div>        
 
-           <script type="text/javascript"> 
-               $(document).ready(function() {
-                    // pagination animation
-                    $('.circle').addClass('start');
-                });
-           </script>
+                <script type="text/javascript"> 
+                    $(document).ready(function() {
+                        // pagination animation
+                        $('.circle').addClass('start');
+                    });
+                </script>
+
+                <canvas id="canvas"></canvas>
+           </div>
+           
         </div> <!-- page -->
       </div> <!-- landing-layout -->
     </div><!-- main-->
@@ -51,6 +55,7 @@
     <script src="assets/js/jquery.smoothState.min.js"></script>
     <script src="assets/js/jquery.unveil.js"></script>
     <script src="assets/js/jquery.scrollify.min.js"></script>
+    <script src="assets/js/particles.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
