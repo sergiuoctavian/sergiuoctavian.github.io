@@ -266,6 +266,9 @@ li{
 		z-index: 3;
 		opacity: 1;
 	}
+	a.home:active .circle, a.home:hover .circle{
+		background: red;
+	}
 	.circle{
 		height: 65px; 
 		width: 65px; 
