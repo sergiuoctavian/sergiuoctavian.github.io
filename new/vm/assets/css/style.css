@@ -139,6 +139,10 @@ section.bottom{
 	background: #111;
 }
 
+#arabela, #film, #sportmix, #city365{
+	padding-top: 15%;
+}
+
 .circle_back{
 	width: 30vw;
 	height: 30vw;
@@ -275,5 +279,8 @@ li{
 		background: #333; 
 		border-radius: 50%;
 		margin: 0 auto;
+	}
+	#arabela, #film, #sportmix, #city365{
+		padding-top: 10%;
 	}
 }
