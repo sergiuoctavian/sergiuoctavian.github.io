@@ -41,19 +41,17 @@
       <div class="v-landing-layout">
         <div class="v-page">
           <div class="v-header">
-            <a class="home" href="index.html">
+            <!-- <a class="home" href="index.html">
               <div class="circle scene_element scene_element--scale"></div>
-            </a> 
+            </a>  -->
           </div> <!-- header -->
           <section class="bottom">
             <div class="content scene_element scene_element--fadein scene_element--delayed">
               <!-- <h2>UX/UI Product Designer and coding entuziast<h2> 
               <p>looking for the next challenge in Berlin.</p> -->
-              <h2>If you’re reading this you’re probably looking for an UX/UI Product Designer in Berlin — or you're just curious <a href="readme.html">about me</a>.<span style="font-size: 18px;"> 🚲 🎨 💻</span></h2>
-
+              <h2>If you’re reading this you’re probably looking for an UX/UI Product Designer in Berlin — or you're just curious <a href="readme.html">about me</a><sup id="sequence">   </sup>.</h2>
               <h2>Let's go straight to my portfolio. <br>↙</h2>
-            </div>
-            <div class="content">
+            
               <h3>selected projects</h3>
 
               <div id="arabela" class="scene_element scene_element--fadeinleft scene_element--delayed">
@@ -103,10 +101,33 @@
                 2016</p>
               </div>
 
+              <div id="" class="scene_element scene_element--fadeinleft scene_element--delayed">
+                <h2><a href="#">VR Headset Concept —<br> Trying to make VR stylish.</a></h2> 
+                <p> 3D expeiment<br>
+                2016</p>
+              </div>
+
 
             </div>
           </section>
+          <script>
+            var emoji = ['🚲', '🎨', '💻', '🌳'];
 
+            textSequence(0);
+            function textSequence(i) {
+
+                if (emoji.length > i) {
+                    setTimeout(function() {
+                        document.getElementById("sequence").innerHTML = emoji[i];
+                        textSequence(++i);
+                    }, 250); // 250 milliseconds
+
+                } else if (emoji.length == i) { // Loop
+                    textSequence(0);
+                }
+
+            }
+          </script>
         </div> <!-- page -->
       </div> <!-- layout -->
     </div> <!-- main -->
