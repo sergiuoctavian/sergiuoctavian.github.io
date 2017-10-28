@@ -19,14 +19,14 @@ body{
 
 /* Typography */
 h1{
-	font-weight: 400;
-	font-size: 4vw;
+	font-weight: 300;
+	font-size: 3.2vw;
 }
 
 h2{
-	font-size: 4vw;
+	font-size: 3.2vw;
 	font-weight: 300;
-	/*line-height: 1px;*/
+	line-height: 1.4;
 }
 h3{
 	font-size: 12px;
@@ -139,9 +139,33 @@ img.logo{
 section.intro{
 	/*padding: 10%;*/
 }
-section.bottom{
+section.dark{
 	color: #fff; 
 	background: #111;
+	transition: background 0.2s ease;
+}
+.poza{
+	width: 350px;
+	height: 150px;
+	position: fixed;
+	right: 0;
+	bottom:0%;
+}
+.poza.arabela{
+	background: url('../img/arabelasim/h-arabelasim.jpg')no-repeat center center;
+	background-size: 100%;
+}
+.poza.film{
+	background: url('../img/23film/h-23film.jpg')no-repeat center center;
+	background-size: 100%;
+}
+.poza.sportmix{
+	background: url('../img/sportmix/h-sportmix.jpg')no-repeat center center;
+	background-size: 100%;
+}
+.poza.city365{
+	background: url('../img/city365/h-city365.jpg')no-repeat center center;
+	background-size: 100%;
 }
 
 #arabela, #film, #sportmix, #city365{

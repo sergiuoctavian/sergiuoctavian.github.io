@@ -45,40 +45,42 @@
               <div class="circle scene_element scene_element--scale"></div>
             </a>  -->
           </div> <!-- header -->
-          <section class="bottom">
+          <section class="dark">
             <div class="content scene_element scene_element--fadein scene_element--delayed">
               <!-- <h2>UX/UI Product Designer and coding entuziast<h2> 
               <p>looking for the next challenge in Berlin.</p> -->
-              <h2>If you’re reading this you’re probably looking for an UX/UI Product Designer in Berlin — or you're just curious <a href="readme.html">about me</a><sup id="sequence">   </sup>.</h2>
+              <h1>If you’re reading this you’re probably looking for an UX/UI Product Designer in Berlin — or you're just curious <a href="readme.html">about me</a><sup id="sequence">   </sup>.</h1>
+              <p><strong>vibråntmatter</strong> is my virtual design studio. The place where I showcase my work and ideas.</p>
               <h2>Let's go straight to my portfolio.↙</h2>
             
               <h3>selected projects</h3>
 
               <div id="arabela" class="scene_element scene_element--fadeinleft scene_element--delayed">
                 <sup>01.</sup>
-                <h2><a href="arabelasim.html">Arabela Sim —<br>a minimal digital catwalk.</a></h2> 
+                <h2 id="p1"><a href="arabelasim.html">Arabela Sim —<br>a minimal digital catwalk.</a></h2> 
                 <p>Design & Development</p>
                 <!-- <p>2016</p> -->
               </div>
               
               <div id="film" class="scene_element scene_element--fadeinleft scene_element--delayed">
                 <sup>02.</sup>
-                <h2><a href="23film.html">23FiLM —<br>a film production company.</a></h2> 
+                <h2 id="p2"><a href="23film.html">23FiLM —<br>a film production company.</a></h2> 
                 <p>Design & development</p>
               </div>
 
               <div id="sportmix" class="scene_element scene_element--fadeinleft scene_element--delayed">
                 <sup>03.</sup>
-                <h2><a href="sportmix.html">sportmix —<br>connecting people trough sport.</a></h2> 
+                <h2 id="p3"><a href="sportmix.html">sportmix —<br>connecting people trough sport.</a></h2> 
                 <p>UX/UI Design & Direction</p>
               </div>
 
               <div id="city365" class="scene_element scene_element--fadeinleft scene_element--delayed">
                 <sup>04.</sup>
-                <h2><a href="city365.html">City365 —<br>the best deals in town.</a></h2> 
+                <h2 id="p4"><a href="city365.html">City365 —<br>the best deals in town.</a></h2> 
                 <p>UX/UI Design & Prototyping</p>
               </div>
             </div>
+            <div class="poza"></div>
             <hr><hr><hr><hr><hr><hr>
            <!--  <div class="content">
               <h2>M — I — S — C.</h2>
@@ -128,6 +130,43 @@
                 }
 
             }
+          </script>
+          <script type="text/javascript">
+            $('#p1').hover(
+                function(){ 
+                    $('.poza').addClass('arabela'); 
+                },
+                function(){ 
+                    $('.poza').removeClass('arabela');
+                }
+            );
+
+            $('#p2').hover(
+                function(){ 
+                    $('.poza').addClass('film'); 
+                },
+                function(){ 
+                    $('.poza').removeClass('film');
+                }
+            );
+
+            $('#p3').hover(
+                function(){ 
+                    $('.poza').addClass('sportmix'); 
+                },
+                function(){ 
+                    $('.poza').removeClass('sportmix');
+                }
+            );
+
+            $('#p4').hover(
+                function(){ 
+                    $('.poza').addClass('city365'); 
+                },
+                function(){ 
+                    $('.poza').removeClass('city365');
+                }
+            );
           </script>
         </div> <!-- page -->
       </div> <!-- layout -->
