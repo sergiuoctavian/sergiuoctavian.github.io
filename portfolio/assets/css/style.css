@@ -145,27 +145,28 @@ section.dark{
 	transition: background 0.2s ease;
 }
 .poza{
-	width: 350px;
+	width: 150px;
 	height: 150px;
 	position: fixed;
-	right: 0;
-	bottom:0%;
+	right: 1%;
+	bottom:1%;
+	border-radius: 50%;
 }
 .poza.arabela{
 	background: url('../img/arabelasim/h-arabelasim.jpg')no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 }
 .poza.film{
 	background: url('../img/23film/h-23film.jpg')no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 }
 .poza.sportmix{
 	background: url('../img/sportmix/h-sportmix.jpg')no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 }
 .poza.city365{
 	background: url('../img/city365/h-city365.jpg')no-repeat center center;
-	background-size: 100%;
+	background-size: cover;
 }
 
 #arabela, #film, #sportmix, #city365{
