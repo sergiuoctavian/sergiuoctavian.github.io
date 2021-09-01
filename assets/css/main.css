@@ -169,8 +169,15 @@ span.delimiter{
   }
 }
 .scroll-top{
-	background: red;
-	padding: 100px;
+	background: #B9C1CC;
+    padding: 5px 20px 20px;
+    color: #B9C1CC;
+    margin: 15vw auto 0px;
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 20px;
 }
 
 .scroll-top .arrow-down{
@@ -463,5 +470,9 @@ a.button:hover{
 		margin: 4vw auto;
 		display: block;
 	}
+
+	.scroll-top{
+    	margin: 5vw auto 0px;
+    }
 
 }
